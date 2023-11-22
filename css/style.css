@@ -530,7 +530,7 @@ mark,
   bottom: 10px;
   left: 10px;
   font-size: 25px;
-  background-color: hsl(36, 61%, 58%);
+  background-color: #f9df7a;
   border-radius: 50%;
   box-shadow: 2px 5px 10px;
   z-index: 999;
@@ -2964,10 +2964,10 @@ fieldset:disabled a.btn {
 }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.9rem;
   font-size: 1.25rem;
   line-height: 1.5;
-  border-radius: 0;
+  border-radius: 50%;
 }
 
 .btn-sm, .btn-group-sm > .btn {
@@ -4149,6 +4149,7 @@ input[type="button"].btn-block {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  background-color: #02445f;
 }
 
 .navbar-toggler {
@@ -9601,8 +9602,8 @@ h6,
 .back-to-top {
   position: fixed;
   display: none;
-  right: 30px;
-  bottom: 30px;
+  right: 10px;
+  bottom: 10px;
   z-index: 11;
   animation: action 1s infinite alternate;
 }
