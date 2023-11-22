@@ -3949,7 +3949,9 @@ input[type="button"].btn-block {
   padding-bottom: 5rem;
   margin-bottom: 5rem;
  }
- 
+ .walk .mobile{
+  display: none;
+ }
 @media(max-width:575px){
    .walk .cImg{
     object-fit: cover;
@@ -3982,7 +3984,12 @@ input[type="button"].btn-block {
   .walk{
     z-index: -1;
   }
- 
+  .walk .mobile{
+    display: block;
+  }
+  .walk .laptop{
+    display: none;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-control-label::before,
