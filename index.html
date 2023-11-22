@@ -80,8 +80,9 @@
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <a href="price.html" class="nav-item nav-link">Pricing</a>
+                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="appointment.html" class="dropdown-item">Appointment</a>
                             <a href="opening.html" class="dropdown-item">Open Hours</a>
@@ -272,6 +273,9 @@
                         redefine beauty with inclusivity. Our vision is to create a space where everyone feels
                         comfortable, confident, and celebrated. With a team of skilled stylists and therapists, we offer
                         a range of services tailored for all genders.</p>
+                    <p>At Glamour Lounge, it's not just about hair and skincare; it's about empowerment and
+                        self-expression. We believe that every person deserves to look and feel their absolute best, and
+                        we're here to make that happen.</p>
                     <div class="row pt-3">
                         <div class="col-4">
                             <div class="bg-light text-center p-2">
@@ -288,14 +292,120 @@
                     </div>
                 </div>
                 <div class="col-lg-6 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100" src="img/gla7.jpg" alt="">
+                    <img class="img-fluid w-100" src="img/gla2.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
+    <!--Gallery start-->
 
 
+
+    <div class="container-fluid px-0 py-5 my-5" style="background-color: #02445f;">
+
+        <div class="row mx-0 justify-content-center text-center">
+            <div class="col-lg-6">
+                <h6 class="d-inline-block bg-light text-primary text-uppercase py-1 px-2">Gallery</h6>
+                <h1>For Our Works</h1>
+            </div>
+        </div>
+        <div class="owl-carousel service-carousel" style="height: 350px;">
+            <div class="service-item position-relative" style="height: 350px;">
+                <img class="img-fluid" src="img/galleryp1.jpeg" alt="" style="height: 100%;object-fit: cover;">
+
+            </div>
+            <div class="service-item position-relative" style="height: 350px;">
+                <img class="img-fluid" src="img/galleryp2.jpeg" alt="" style="height: 100%;object-fit: cover;">
+
+            </div>
+            <div class="service-item position-relative" style="height: 350px;">
+                <img class="img-fluid" src="img/galleryp3.jpeg" alt="" style="height: 100%;object-fit: cover;">
+
+            </div>
+            <div class="service-item position-relative" style="height: 350px;">
+                <img class="img-fluid" src="img/galleryp4.jpeg" alt="" style="height: 100%;object-fit: cover;">
+
+            </div>
+            <div class="service-item position-relative" style="height: 350px;">
+                <img class="img-fluid" src="img/galleryp5.jpeg" alt="" style="height: 100%;object-fit: cover;">
+
+            </div>
+            <div class="service-item position-relative" style="height: 350px;">
+                <img class="img-fluid" src="img/service-1.jpg" alt="" style="height: 100%;object-fit: cover;">
+
+            </div>
+            <div class="service-item position-relative" style="height: 350px;">
+                <img class="img-fluid" src="img/service-2.jpg" alt="" style="height: 100%;object-fit: cover;">
+
+            </div>
+            <div class="service-item position-relative" style="height: 350px;">
+                <img class="img-fluid" src="img/service-3.jpg" alt="" style="height: 100%;object-fit: cover;">
+
+            </div>
+            <div class="service-item position-relative" style="height: 350px;">
+                <img class="img-fluid" src="img/service-4.jpg" alt="" style="height: 100%;object-fit: cover;">
+
+            </div>
+            <div class="service-item position-relative" style="height: 350px;">
+                <img class="img-fluid" src="img/service-5.jpg" alt="" style="height: 100%;object-fit: cover;">
+
+            </div>
+            <div class="service-item position-relative" style="height: 350px;">
+                <img class="img-fluid" src="img/service-6.jpg" alt="" style="height: 100%;object-fit: cover;">
+
+            </div>
+        </div>
+    </div>
+    <!--Gallery end-->
+
+    <script>
+        function showServices(category) {
+            // Hide all service lists
+            var serviceLists = document.querySelectorAll('.services');
+            serviceLists.forEach(function (list) {
+                list.style.display = 'none';
+            });
+
+            // Show the selected service list
+            var selectedList = document.getElementById(category + 'Services');
+            if (selectedList) {
+                selectedList.style.display = 'block';
+            }
+        }
+        function showService(category) {
+            // Hide all service lists
+            var serviceLists = document.querySelectorAll('.service');
+            serviceLists.forEach(function (list) {
+                list.style.display = 'none';
+            });
+
+            // Show the selected service list
+            var selectedList = document.getElementById(category + 'Service');
+            if (selectedList) {
+                selectedList.style.display = 'block';
+            }
+        }
+
+    </script>
+
+
+    <!--Services1 start-->
+    <!-- <div class="pricing-tab-container service-list" id="femaleServices">
+        <ul class="grid-list">
+            <li data-filter="female">
+                <ul class="tab-filter" style="display: flex;list-style-type: none;">
+                    <li>
+                        <button class="filter-btn active" data-filter-btn="all">
+                            <p class="btn-text">All Services</p>
+                        </button>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div> -->
+    <!--Services1 end-->
     <!-- Service Start -->
     <div class="container-fluid px-0 py-5 my-5" style="background-color: #02445f;">
         <div class="row mx-0 justify-content-center text-center">
@@ -305,6 +415,7 @@
             </div>
         </div>
         <div class="owl-carousel service-carousel">
+
             <div class="service-item position-relative">
                 <img class="img-fluid" src="img/service-1.jpg" alt="">
                 <div class="service-text text-center">
@@ -370,6 +481,561 @@
                         <a class="btn btn-primary" href="">Make Order</a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <style>
+            .services {
+                display: none;
+            }
+
+            .service {
+                display: none;
+            }
+
+            .ser .btnS {
+                padding: 12px 22px;
+                background-color: #f9df7a;
+                outline: 0;
+                border: 1px solid white;
+                margin: 10px;
+                font-weight: 700;
+                color: #02445f;
+            }
+        </style>
+        <div class="text-center ser">
+            <button onclick="showServices('female')" class="btnS">Female Services</button>
+            <button onclick="showServices('male')" class="btnS">Male Services</button>
+
+            <div id="maleServices" class="services">
+                <h2>Male Services</h2>
+                <div>
+                    <button onclick="showService('serviceM1')">Beauty & Spa</button>
+                    <button onclick="showService('serviceM2')">Hair Cuts</button>
+                    <button onclick="showService('serviceM3')">Styling</button>
+                </div>
+                <ul class="service" id="serviceM1Service">
+                    helll1
+                </ul>
+                <ul class="service" id="serviceM2Service">
+                    helll2
+                </ul>
+                <ul class="service" id="serviceM3Service">
+                    helll3
+                </ul>
+            </div>
+
+            <div id="femaleServices" class="services">
+                <h2>Female Services</h2>
+                <div>
+                    <button onclick="showService('service1')">Beauty & Spa</button>
+                    <button onclick="showService('service2')">Hair Cuts</button>
+                    <button onclick="showService('service3')">Styling</button>
+                    <button onclick="showService('service4')">Treatments</button>
+                    <button onclick="showService('service5')">Hair Colour</button>
+                    <button onclick="showService('service6')">Technical Services</button>
+                    <button onclick="showService('service7')">Regular Waxing & Rica Waxing</button>
+                    <button onclick="showService('service8')">Spa Services</button>
+                    <button onclick="showService('service9')">Skin Treatments</button>
+                    <button onclick="showService('service10')">Facials</button>
+                    <button onclick="showService('service11')">Women Beauty Services</button>
+                    <button onclick="showService('service12')">Detan/Bleach</button>
+                </div>
+                <ul id="service1Service" class="service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-1.jpg" width="90" height="90" alt="Hair Cutting & Fitting"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Hair Cutting & Fitting</h3>
+                                    <p class="card-text">1 Male</p>
+                                </div>
+
+                                <data class="card-price" value="89">₹449</data>
+                            </div>
+                            <div class="pricing-card">
+                                <p>Female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-1.jpg" width="90" height="90" alt="Hair Cutting & Fitting"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Hair Cutting & Fitting</h3>
+
+                                    <p class="card-text">1 feMale</p>
+                                </div>
+                                <data class="card-price" value="89">₹449</data>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="service2Service" class="service">
+                    <li>
+                        <div
+                            style="display: flex;justify-content: space-around;align-items: center;flex-direction: row;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-2.jpg" width="90" height="90" alt="Shaving & Facial"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'Oreal Hair Color</h3>
+
+                                    <p class="card-text">1 Male</p>
+                                </div>
+
+                                <data class="card-price" value="45">₹899</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-2.jpg" width="90" height="90" alt="Shaving & Facial"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'Oreal Hair Color</h3>
+
+                                    <p class="card-text">1 Male</p>
+                                </div>
+
+                                <data class="card-price" value="45">₹899</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+                <ul class="service" id="service3Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-3.jpg" width="90" height="90" alt="Hair Color & Wash"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title"> L'oreal Global Hair Color (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="35">₹3,499</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-3.jpg" width="90" height="90" alt="Hair Color & Wash"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title"> L'oreal Global Hair Color (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="35">₹3,499</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+                <ul class="service" id="service4Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-4.jpg" width="90" height="90" alt="Body Massage"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Full Body Polishing + Full Body De-Tan</h3>
+
+                                    <p class="card-text">1 Person</p>
+                                </div>
+
+                                <data class="card-price" value="56">₹4,999</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-4.jpg" width="90" height="90" alt="Body Massage"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Full Body Polishing + Full Body De-Tan</h3>
+
+                                    <p class="card-text">1 Person</p>
+                                </div>
+
+                                <data class="card-price" value="56">₹4,999</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+                <ul class="service" id="service5Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'oreal Hair Spa (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="27">₹1,199</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'oreal Hair Spa (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="27">₹1,199</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+                <ul class="service" id="service6Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-6.jpg" width="90" height="90" alt="Facial & Face Wash"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Advance Haircut (Senior Hair Stylist) + Hair Wash +
+                                        Blow
+                                        Dry
+                                    </h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="63">₹1,099</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-6.jpg" width="90" height="90" alt="Facial & Face Wash"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Advance Haircut (Senior Hair Stylist) + Hair Wash +
+                                        Blow
+                                        Dry
+                                    </h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="63">₹1,099</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+                <ul class="service" id="service7Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-1.jpg" width="90" height="90" alt="Backbone Massage"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Advance Haircut (Senior Hair Stylist) + Hair Wash +
+                                        Blow
+                                        Dry
+                                    </h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="43">₹1,099</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-1.jpg" width="90" height="90" alt="Backbone Massage"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Advance Haircut (Senior Hair Stylist) + Hair Wash +
+                                        Blow
+                                        Dry
+                                    </h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="43">₹1,099</data>
+
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                </ul>
+                <ul class="service" id="service8Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-2.jpg" width="90" height="90" alt="Meditation & Massage"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Keratin Treatment (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="74">₹5,999</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>femlae</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-2.jpg" width="90" height="90" alt="Meditation & Massage"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Keratin Treatment (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="74">₹5,999</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+                <ul class="service" id="service9Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-2.jpg" width="90" height="90" alt="Meditation & Massage"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Keratin Treatment (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="74">₹5,999</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>femlae</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-2.jpg" width="90" height="90" alt="Meditation & Massage"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Keratin Treatment (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="74">₹5,999</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+                <ul class="service" id="service10Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'oreal Hair Spa (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="27">₹1,199</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'oreal Hair Spa (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="27">₹1,199</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+                <ul class="service" id="service11Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'oreal Hair Spa (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="27">₹1,199</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'oreal Hair Spa (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="27">₹1,199</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+                <ul class="service" id="service12Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'oreal Hair Spa (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="27">₹1,199</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'oreal Hair Spa (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="27">₹1,199</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
             </div>
         </div>
         <div class="row justify-content-center bg-appointment mx-0">
@@ -453,11 +1119,21 @@
                             techniques, including exfoliation, moisturization, and massage, aiming to improve skin
                             texture, promote relaxation, and alleviate muscle tension.</p>
                         <ul class="list-inline">
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Mon – Fri : 9:00 AM -
-                                7:00 PM</li>
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Saturday : 9:00 AM - 6:00
+                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Monday : 10:00 AM -
+                                9:00 PM</li>
+                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Tuesday : 10:00 AM -
+                                9:00
                                 PM</li>
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Sunday : Closed</li>
+                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Thursday : 10:00 AM -
+                                9:00 PM</li>
+                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Friday : 10:00 AM -
+                                9:00
+                                PM</li>
+                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Saturday : 10:00 AM -
+                                9:00 PM</li>
+                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Sunday : 10:00 AM -
+                                9:00
+                                PM</li>
                         </ul>
                         <a href="" class="btn btn-primary mt-2">Book Now</a>
                     </div>
@@ -769,6 +1445,10 @@
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-6 pb-5 pb-lg-0">
+                    <!-- <div class="layout21_image-wrapper">
+                        <video style="width: 100%; height: 100%; object-fit: cover" autoplay="" loop="" muted=""
+                            src="./img/testimonial.jpg"></video>
+                    </div> -->
                     <img class="img-fluid w-100" src="img/testimonial.jpg" alt="">
                 </div>
                 <div class="col-lg-6">
@@ -779,15 +1459,17 @@
                             <i class="fa fa-3x fa-quote-right text-primary position-absolute"
                                 style="top: -6px; right: 0;"></i>
                             <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg"
-                                    style="width: 60px; height: 60px;" alt="">
+                                <img class="img-fluid rounded-circle" src="img/gallery-4.jpg"
+                                    style="width: 60px; height: 60px;object-fit: scale-down;" alt="">
                                 <div class="ml-3">
-                                    <h6 class="text-uppercase">Client Name</h6>
+                                    <h6 class="text-uppercase">David N</h6>
                                     <span>Profession</span>
                                 </div>
                             </div>
-                            <p class="m-0">Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor
-                                sea ipsum diam sed clita dolore eos dolores magna erat dolore sed stet justo et dolor.
+                            <p class="m-0">"I've been a regular at Glamour Lounge for years, and I couldn't be happier
+                                with the service. The stylists are not only skilled but also incredibly attentive to my
+                                preferences. Plus, it's refreshing to find a salon that caters to everyone. Kudos to the
+                                team!"
                             </p>
                         </div>
                         <div class="position-relative">
@@ -797,12 +1479,14 @@
                                 <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg"
                                     style="width: 60px; height: 60px;" alt="">
                                 <div class="ml-3">
-                                    <h6 class="text-uppercase">Client Name</h6>
+                                    <h6 class="text-uppercase">Emily R</h6>
                                     <span>Profession</span>
                                 </div>
                             </div>
-                            <p class="m-0">Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor
-                                sea ipsum diam sed clita dolore eos dolores magna erat dolore sed stet justo et dolor.
+                            <p class="m-0"> "Finding a unisex salon that understands my style has always been a
+                                challenge, but Glamour Lounge exceeded my expectations. From haircuts to skincare, they
+                                deliver exceptional results every time. I highly recommend them to anyone seeking a
+                                versatile and welcoming salon experience."
                             </p>
                         </div>
                         <div class="position-relative">
@@ -812,12 +1496,31 @@
                                 <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg"
                                     style="width: 60px; height: 60px;" alt="">
                                 <div class="ml-3">
-                                    <h6 class="text-uppercase">Client Name</h6>
+                                    <h6 class="text-uppercase">Alex M</h6>
                                     <span>Profession</span>
                                 </div>
                             </div>
-                            <p class="m-0">Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor
-                                sea ipsum diam sed clita dolore eos dolores magna erat dolore sed stet justo et dolor.
+                            <p class="m-0">"I recently visited Glamour Lounge for a special event, and I was blown away
+                                by the level of professionalism and talent. The team not only transformed my look but
+                                also made me feel comfortable throughout the process. I'm definitely making this salon
+                                my go-to spot!"
+                            </p>
+                        </div>
+                        <div class="position-relative">
+                            <i class="fa fa-3x fa-quote-right text-primary position-absolute"
+                                style="top: -6px; right: 0;"></i>
+                            <div class="d-flex align-items-center mb-3">
+                                <img class="img-fluid rounded-circle" src="img/gallery-1.jpg"
+                                    style="width: 60px; height: 60px;" alt="">
+                                <div class="ml-3">
+                                    <h6 class="text-uppercase">D Ravi</h6>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                            <p class="m-0">"I can't thank Glamour Lounge enough for making me feel fabulous every time I
+                                visit. As a guy, I was a bit apprehensive at first, but the staff's professionalism and
+                                the unisex environment immediately put me at ease. The quality of service is
+                                exceptional, and I wouldn't trust my grooming and style needs to anyone else."
                             </p>
                         </div>
                     </div>
@@ -827,9 +1530,27 @@
     </div>
     <!-- Testimonial End -->
 
+    <!--Map-->
+
+    <div class="map container-fluid">
+        <h2 class="text-center">Map Directions</h2>
+        <div class="d-flex align-items-center justify-content-center">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3934200523154!2d78.39540307429371!3d17.44087410126385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91437bb97f95%3A0x3fd1d4e5f3a572b!2sThe%20Glamour%20Lounge!5e0!3m2!1sen!2sin!4v1700638209189!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <style>
+        .map iframe {
+            width: 80%;
+            height: 450px;
+            border: 0;
+        }
+    </style>
+    <!--Map-->
 
     <!-- Footer Start -->
-    <div class="footer container-fluid position-relative py-5" style="margin-top: 90px;background-color: #02445f;">
+    <div class="footer container-fluid position-relative py-5" style="margin-top: 90px;">
         <div class="container pt-5">
             <div class="row">
                 <div class="col-lg-6 pr-lg-5 mb-5">

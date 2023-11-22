@@ -6398,9 +6398,9 @@ button.bg-dark:focus {
   content: "";
 }
 
-.d-none {
+/* .d-none {
   display: none !important;
-}
+} */
 
 .d-inline {
   display: inline !important;
