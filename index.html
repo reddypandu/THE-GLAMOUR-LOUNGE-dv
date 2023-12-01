@@ -25,11 +25,20 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!--book table script-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('39hCsEwrxcKGEpEyd');
+        })();
+    </script>
+    <!--book table script-->
 </head>
 
 <body>
     <!-- Topbar Start -->
-    <div class="container-fluid d-none d-lg-block" style="background-color: #02445f;">
+    <div class="container-fluid d-lg-block" style="background-color: #02445f;">
         <div class="row py-2 px-lg-5">
             <div class="col-lg-6 text-left mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center">
@@ -42,20 +51,18 @@
             </div>
             <div class="col-lg-6 text-right">
                 <div class="d-inline-flex align-items-center">
-                    <a class="text-primary px-2" href="">
+                    <a class="text-primary px-2" href="tel:+9173373
+                    59025"><i class="fas fa-phone-alt" style="color: #f9df7a;"></i></a>
+                    <a class="text-primary px-2"
+                        href="https://www.facebook.com/100968418448682/posts/the-glamour-lounge-unisex-salon-spa-offering-body-massagesour-salon-provides-bod/442812414264279/?locale=ms_MY&paipv=0&eav=Afa5wtujIaaCPMwzBsExr3NSRuNhMXAFlLzg01jjHmktRiyrWNmCce2KkdpB6bWjyTg&_rdr">
                         <i class="fab fa-facebook-f" style="color: #f9df7a;"></i>
                     </a>
-                    <a class="text-primary px-2" href="">
-                        <i class="fab fa-twitter" style="color: #f9df7a;"></i>
+                    <a class="text-primary px-2"
+                        href="https://www.google.com/maps/place/The+Glamour+Lounge/@17.4408741,78.3954031,17z/data=!3m2!4b1!5s0x3bcb91437a53787b:0xd1cf6e0f2ab83f8d!4m6!3m5!1s0x3bcb91437bb97f95:0x3fd1d4e5f3a572b!8m2!3d17.440869!4d78.397978!16s%2Fg%2F1ptxmlmhh?authuser=0&entry=ttu">
+                        <i class="fas fa-map-marker-alt" style="color: #f9df7a;"></i>
                     </a>
-                    <a class="text-primary px-2" href="">
-                        <i class="fab fa-linkedin-in" style="color: #f9df7a;"></i>
-                    </a>
-                    <a class="text-primary px-2" href="">
+                    <a class="text-primary px-2" href="https://www.instagram.com/theglamourloungesalon/?hl=en">
                         <i class="fab fa-instagram" style="color: #f9df7a;"></i>
-                    </a>
-                    <a class="text-primary pl-2" href="">
-                        <i class="fab fa-youtube" style="color: #f9df7a;"></i>
                     </a>
                 </div>
             </div>
@@ -83,19 +90,10 @@
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <a href="price.html" class="nav-item nav-link">Pricing</a>
                     <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="appointment.html" class="dropdown-item">Appointment</a>
-                            <a href="opening.html" class="dropdown-item">Open Hours</a>
-                            <a href="team.html" class="dropdown-item">Our Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        </div>
-                    </div>
+                    <a href="appointment.html" class="nav-item nav-link">Appointment</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact us</a>
                 </div>
-                <a href="" class="btn btn-primary d-none d-lg-block">Book Now</a>
+                <a href="#appointment" class="btn btn-primary d-none d-lg-block">Book Now</a>
             </div>
         </nav>
     </div>
@@ -423,10 +421,11 @@
                 <img class="img-fluid" src="img/service-1.jpg" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Body Massage</h4>
-                    <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo
-                        sit ipsum</p>
+                    <p class="text-white px-3 mb-3">
+                        A body massage involves the manipulation of soft tissues to enhance physical and mental
+                        well-being through techniques such as rubbing, kneading, and applying pressure.</p>
                     <div class="w-100 bg-white text-center p-4">
-                        <a class="btn btn-primary" href="">Make Order</a>
+                        <a class="btn btn-primary" href="#footer">Visit Now</a>
                     </div>
                 </div>
             </div>
@@ -434,10 +433,11 @@
                 <img class="img-fluid" src="img/service-2.jpg" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Stone Therapy</h4>
-                    <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo
-                        sit ipsum</p>
+                    <p class="text-white px-3 mb-3">Stone therapy, also known as hot stone massage, involves placing
+                        heated stones on the body to enhance relaxation and promote healing during a massage session.
+                    </p>
                     <div class="w-100 bg-white text-center p-4">
-                        <a class="btn btn-primary" href="">Make Order</a>
+                        <a class="btn btn-primary" href="#footer">Visit Now</a>
                     </div>
                 </div>
             </div>
@@ -445,10 +445,12 @@
                 <img class="img-fluid" src="img/service-3.jpg" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Facial Therapy</h4>
-                    <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo
-                        sit ipsum</p>
+                    <p class="text-white px-3 mb-3">
+                        Facial therapy involves specialized skincare treatments designed to improve and maintain the
+                        health and appearance of the face, addressing concerns such as aging, acne, and overall skin
+                        rejuvenation.</p>
                     <div class="w-100 bg-white text-center p-4">
-                        <a class="btn btn-primary" href="">Make Order</a>
+                        <a class="btn btn-primary" href="#footer">Visit Now</a>
                     </div>
                 </div>
             </div>
@@ -456,10 +458,11 @@
                 <img class="img-fluid" src="img/service-4.jpg" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Skin Care</h4>
-                    <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo
-                        sit ipsum</p>
+                    <p class="text-white px-3 mb-3">"Skin care involves maintaining and enhancing the health and
+                        appearance of the skin through cleansing, moisturizing, protection from the sun, and other
+                        practices."</p>
                     <div class="w-100 bg-white text-center p-4">
-                        <a class="btn btn-primary" href="">Make Order</a>
+                        <a class="btn btn-primary" href="#footer">Visit Now</a>
                     </div>
                 </div>
             </div>
@@ -467,10 +470,10 @@
                 <img class="img-fluid" src="img/service-5.jpg" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Stream Bath</h4>
-                    <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo
-                        sit ipsum</p>
+                    <p class="text-white px-3 mb-3">Stream bathing involves immersing oneself in natural water bodies
+                        like streams, providing a therapeutic experience that promotes relaxation and well-being.</p>
                     <div class="w-100 bg-white text-center p-4">
-                        <a class="btn btn-primary" href="">Make Order</a>
+                        <a class="btn btn-primary" href="#footer">Visit Now</a>
                     </div>
                 </div>
             </div>
@@ -478,10 +481,11 @@
                 <img class="img-fluid" src="img/service-6.jpg" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Face Masking</h4>
-                    <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo
-                        sit ipsum</p>
+                    <p class="text-white px-3 mb-3">Face masking involves applying a protective covering over the nose
+                        and mouth, typically a cloth or medical mask, to reduce the spread of respiratory droplets and
+                        protect against the transmission of infectious agents.</p>
                     <div class="w-100 bg-white text-center p-4">
-                        <a class="btn btn-primary" href="">Make Order</a>
+                        <a class="btn btn-primary" href="#footer">Visit Now</a>
                     </div>
                 </div>
             </div>
@@ -1077,114 +1081,15 @@
                 </ul>
             </div>
         </div>
-        <div class="row justify-content-center bg-appointment mx-0">
-            <div class="col-lg-6 py-5">
-                <div class="p-5 my-5" style="background: rgba(33, 30, 28, 0.7);">
-                    <h1 class="text-white text-center mb-4">Make Appointment</h1>
-                    <form>
-                        <div class="form-row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control bg-transparent p-4" placeholder="Your Name"
-                                        required="required" />
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <input type="email" class="form-control bg-transparent p-4" placeholder="Your Email"
-                                        required="required" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <div class="date" id="date" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent p-4 datetimepicker-input"
-                                            placeholder="Select Date" data-target="#date"
-                                            data-toggle="datetimepicker" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <div class="time" id="time" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent p-4 datetimepicker-input"
-                                            placeholder="Select Time" data-target="#time"
-                                            data-toggle="datetimepicker" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <select class="custom-select bg-transparent px-4" style="height: 47px;">
-                                        <option selected style="color: #02445f;">Select A Service</option>
-                                        <option value="1" style="color: #02445f;">CUTTING</option>
-                                        <option value="2" style="color: #02445f;">BEAUTY</option>
-                                        <option value="3" style="color: #02445f;">MASSAGE</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <button class="btn btn-primary btn-block" type="submit" style="height: 47px;">Make
-                                    Appointment</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- Service End -->
 
 
-    <!-- Open Hours Start -->
-    <div class="container-fluid py-5" style="background-color: #02445f;">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-6" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/opening.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-5 pb-lg-5">
-                    <div class="hours-text bg-light p-4 p-lg-5 my-lg-5">
-                        <h6 class="d-inline-block text-white text-uppercase bg-primary py-1 px-2">Open Hours</h6>
-                        <h1 class="mb-4">Best Relax And Spa Zone</h1>
-                        <p>Body treatments encompass a range of therapeutic and rejuvenating experiences designed to
-                            nurture and enhance the well-being of the body. These treatments often involve various
-                            techniques, including exfoliation, moisturization, and massage, aiming to improve skin
-                            texture, promote relaxation, and alleviate muscle tension.</p>
-                        <ul class="list-inline">
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Monday : 10:00 AM -
-                                9:00 PM</li>
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Tuesday : 10:00 AM -
-                                9:00
-                                PM</li>
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Thursday : 10:00 AM -
-                                9:00 PM</li>
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Friday : 10:00 AM -
-                                9:00
-                                PM</li>
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Saturday : 10:00 AM -
-                                9:00 PM</li>
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Sunday : 10:00 AM -
-                                9:00
-                                PM</li>
-                        </ul>
-                        <a href="" class="btn btn-primary mt-2">Book Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Open Hours End -->
 
 
     <!-- Pricing Start women -->
     <div class="container-fluid bg-pricing" style="margin: 90px 0;">
+        <h2 class="text-center">Female Pricing</h2>
         <div class="container">
             <div class="row">
                 <div class="col-lg-5" style="min-height: 500px;">
@@ -1210,7 +1115,7 @@
                                     <p><i class="fa fa-check text-success mr-2"></i>2 - People</p>
                                     <p><i class="fa fa-check text-success mr-2"></i>Services 20% Discount</p>
                                     <p><i class="fa fa-check text-success mr-2"></i>Products 5% Discount</p>
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
+                                    <a href="#footer" class="btn btn-primary my-2">Order Now</a>
                                 </div>
                             </div>
                             <div class="bg-white">
@@ -1250,7 +1155,7 @@
                                         </div>
                                     </div>
 
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
+                                    <a href="#footer" class="btn btn-primary my-2">Order Now</a>
                                 </div>
                             </div>
                             <div class="bg-white">
@@ -1270,7 +1175,7 @@
                                     <p><i class="fa fa-check text-success mr-2"></i>Hot Stone Massage</p>
                                     <p><i class="fa fa-check text-success mr-2"></i>Tissue Body Polish</p>
                                     <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care</p>
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
+                                    <a href="#footer" class="btn btn-primary my-2">Order Now</a>
                                 </div>
                             </div>
                         </div>
@@ -1282,6 +1187,7 @@
     <!-- Pricing End women -->
     <!-- Pricing Start men -->
     <div class="container-fluid bg-pricing" style="margin: 90px 0;background: url('./img/landingapgemal1.jpg');">
+        <h2 class="text-center">Male Pricing</h2>
         <div class="container">
             <div class="row">
                 <div class="col-lg-5" style="min-height: 500px;">
@@ -1307,7 +1213,7 @@
                                     <p><i class="fa fa-check text-success mr-2"></i>2 - People</p>
                                     <p><i class="fa fa-check text-success mr-2"></i>Services 20% Discount</p>
                                     <p><i class="fa fa-check text-success mr-2"></i>Products 5% Discount</p>
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
+                                    <a href="#footer" class="btn btn-primary my-2">Order Now</a>
                                 </div>
                             </div>
                             <div class="bg-white">
@@ -1347,7 +1253,7 @@
                                         </div>
                                     </div>
 
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
+                                    <a href="#footer" class="btn btn-primary my-2">Order Now</a>
                                 </div>
                             </div>
                             <div class="bg-white">
@@ -1367,7 +1273,7 @@
                                     <p><i class="fa fa-check text-success mr-2"></i>Hot Stone Massage</p>
                                     <p><i class="fa fa-check text-success mr-2"></i>Tissue Body Polish</p>
                                     <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care</p>
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
+                                    <a href="#footer" class="btn btn-primary my-2">Order Now</a>
                                 </div>
                             </div>
                         </div>
@@ -1394,10 +1300,10 @@
                         <img class="img-fluid" src="img/team-1.jpg" alt="">
                         <div class="position-relative text-center">
                             <div class="team-text bg-primary text-white">
-                                <h5 class="text-white text-uppercase">Olivia Mia</h5>
+                                <h5 class="text-white text-uppercase">Alexa</h5>
                                 <p class="m-0">Spa & Beauty Expert</p>
                             </div>
-                            <div class="team-social bg-dark text-center">
+                            <!-- <div class="team-social bg-dark text-center">
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                                         class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
@@ -1406,7 +1312,7 @@
                                         class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-outline-primary btn-square" href="#"><i
                                         class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -1415,10 +1321,10 @@
                         <img class="img-fluid" src="img/team-2.jpg" alt="">
                         <div class="position-relative text-center">
                             <div class="team-text bg-primary text-white">
-                                <h5 class="text-white text-uppercase">Cory Brown</h5>
+                                <h5 class="text-white text-uppercase">RANI</h5>
                                 <p class="m-0">Spa & Beauty Expert</p>
                             </div>
-                            <div class="team-social bg-dark text-center">
+                            <!-- <div class="team-social bg-dark text-center">
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                                         class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
@@ -1427,7 +1333,7 @@
                                         class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-outline-primary btn-square" href="#"><i
                                         class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -1436,10 +1342,10 @@
                         <img class="img-fluid" src="img/team-5.jpg" alt="">
                         <div class="position-relative text-center">
                             <div class="team-text bg-primary text-white">
-                                <h5 class="text-white text-uppercase">Elizabeth Ross</h5>
-                                <p class="m-0">Spa & Beauty Expert</p>
+                                <h5 class="text-white text-uppercase">JOSEPH</h5>
+                                <p class="m-0">Spa & Cutting Expert</p>
                             </div>
-                            <div class="team-social bg-dark text-center">
+                            <!-- <div class="team-social bg-dark text-center">
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                                         class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
@@ -1448,7 +1354,7 @@
                                         class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-outline-primary btn-square" href="#"><i
                                         class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -1457,10 +1363,10 @@
                         <img class="img-fluid" src="img/team-6.jpg" alt="">
                         <div class="position-relative text-center">
                             <div class="team-text bg-primary text-white">
-                                <h5 class="text-white text-uppercase">Kelly Walke</h5>
-                                <p class="m-0">Spa & Beauty Expert</p>
+                                <h5 class="text-white text-uppercase">PRASAD</h5>
+                                <p class="m-0">Spa & Cutting Expert</p>
                             </div>
-                            <div class="team-social bg-dark text-center">
+                            <!-- <div class="team-social bg-dark text-center">
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
                                         class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-primary btn-square mr-2" href="#"><i
@@ -1469,7 +1375,7 @@
                                         class="fab fa-linkedin-in"></i></a>
                                 <a class="btn btn-outline-primary btn-square" href="#"><i
                                         class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -1568,6 +1474,47 @@
         </div>
     </div>
     <!-- Testimonial End -->
+    <!-- Open Hours Start -->
+    <div class="container-fluid py-5" style="background-color: #02445f;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="img/opening.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5">
+                    <div class="hours-text bg-light p-4 p-lg-5 my-lg-5">
+                        <h6 class="d-inline-block text-white text-uppercase bg-primary py-1 px-2">Open Hours</h6>
+                        <h1 class="mb-4">Best Relax And Spa Zone</h1>
+                        <p>Body treatments encompass a range of therapeutic and rejuvenating experiences designed to
+                            nurture and enhance the well-being of the body. These treatments often involve various
+                            techniques, including exfoliation, moisturization, and massage, aiming to improve skin
+                            texture, promote relaxation, and alleviate muscle tension.</p>
+                        <ul class="list-inline">
+                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Monday : 10:00 AM -
+                                9:00 PM</li>
+                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Tuesday : 10:00 AM -
+                                9:00
+                                PM</li>
+                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Thursday : 10:00 AM -
+                                9:00 PM</li>
+                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Friday : 10:00 AM -
+                                9:00
+                                PM</li>
+                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Saturday : 10:00 AM -
+                                9:00 PM</li>
+                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Sunday : 10:00 AM -
+                                9:00
+                                PM</li>
+                        </ul>
+                        <a href="#appointment" class="btn btn-primary mt-2">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Open Hours End -->
 
     <!--Map-->
 
@@ -1587,9 +1534,83 @@
         }
     </style>
     <!--Map-->
+    <!-- Service Start -->
+    <div class="container-fluid px-0 py-2 my-2" id="appointment">
+        <div class="row justify-content-center bg-appointment mx-0">
+            <div class="col-lg-6 py-2">
+                <div class="p-5 my-5">
+                    <h1 class="text-center mb-2" style="color: white;">Make an Appointment</h1>
+                    <form id="bookingForm" class="bookingForm">
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control bg-transparent p-4 fullName"
+                                        placeholder="Your Name" id="fullName" required="required" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input id="mail" type="email" class="form-control bg-transparent p-4 mail"
+                                        placeholder="Your Email" required="required" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <div class="date" data-target-input="nearest">
+                                        <input id="date" type="date"
+                                            class="form-control bg-transparent p-4 datetimepicker-input date"
+                                            placeholder="Select Date" data-toggle="datetimepicker" />
 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <div class="time" data-target-input="nearest">
+                                        <input id="time" type="time"
+                                            class="form-control bg-transparent p-4 datetimepicker-input time"
+                                            placeholder="Select Time" data-toggle="datetimepicker" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input id="message" type="text" class="form-control bg-transparent p-4 message"
+                                        placeholder="Message" required="required" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <select id="service" class="form-control bg-transparent" style="color: #f9df7a;">
+
+                                        <option value="Cutting" selected style="background-color: #02445f;">Cutting
+                                        </option>
+                                        <option value="Spa" style="background-color: #02445f;">Spa</option>
+                                        <option value="Beauty" style="background-color: #02445f;">Beauty</option>
+                                        <option value="Massage" style="background-color: #02445f;">Massage</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+
+                            <div class="col-sm-12">
+                                <button class="btn btn-primary btn-block" type="submit" style="height: 47px;">Book
+                                    Appointment</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
     <!-- Footer Start -->
-    <div class="footer container-fluid position-relative py-5" style="margin-top: 90px;">
+    <div class="footer container-fluid position-relative py-5" style="margin-top: 90px;" id="footer">
         <div class="container pt-5">
             <div class="row">
                 <div class="col-lg-6 pr-lg-5 mb-5">
@@ -1604,11 +1625,14 @@
                     <p style="word-break: break-all;"><i
                             class="fa fa-envelope mr-2"></i>theglamourlounge.salon@gmail.com</p>
                     <div class="d-flex justify-content-start mt-4">
-                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i
-                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="tel:+9173373 59025"><i
+                                class="fas fa-phone-alt s icons-white"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2"
+                            href="https://www.google.com/maps/place/The+Glamour+Lounge/@17.4408741,78.3954031,17z/data=!3m2!4b1!5s0x3bcb91437a53787b:0xd1cf6e0f2ab83f8d!4m6!3m5!1s0x3bcb91437bb97f95:0x3fd1d4e5f3a572b!8m2!3d17.440869!4d78.397978!16s%2Fg%2F1ptxmlmhh?authuser=0&entry=ttu">
+                            <i class="fas fa-map-marker-alt s icons-white"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2 "
+                            href="https://www.facebook.com/100968418448682/posts/the-glamour-lounge-unisex-salon-spa-offering-body-massagesour-salon-provides-bod/442812414264279/?locale=ms_MY&paipv=0&eav=Afa5wtujIaaCPMwzBsExr3NSRuNhMXAFlLzg01jjHmktRiyrWNmCce2KkdpB6bWjyTg&_rdr"><i
+                                class="fab fa-facebook-f s icons-white"></i></a>
                         <a class="btn btn-lg btn-primary btn-lg-square"
                             href="https://www.instagram.com/theglamourloungesalon/?hl=en"><i
                                 class="fab fa-instagram"></i></a>
@@ -1700,6 +1724,116 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!--chatbot script-->
+    <!--Start of Tawk.to Script-->
+    <!-- <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6560ec7aba9fcf18a80e9f46/1hg19ng29';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script> -->
+    <!--End of Tawk.to Script-->
+    <script>
+        //book appointment
+
+        document
+            .getElementById("bookingForm")
+            .addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                var fullName = document.getElementById("fullName").value;
+                var email = document.getElementById("mail").value;
+                var date = document.getElementById("date").value;
+                var time = document.getElementById("time").value;
+                var message = document.getElementById("message").value;
+                var service = document.getElementById("service").value;
+
+
+                // debugger
+
+                // if (!fullName) {
+                //     showError(document.getElementById("name"), "Please enter your name.");
+                //     // return;
+                // }
+
+                // if (!email) {
+                //     showError(document.getElementById("email"), "Please enter your email.");
+                //     // return;
+                // }
+
+                // if (!subject) {
+                //     showError(document.getElementById("subject"), "Please enter a subject.");
+                //     // return;
+                // }
+
+                // if (!message) {
+                //     showError(document.getElementById("message"), "Please enter your message.");
+                //     // return;
+                // }
+                var contact = "+9173373 59025";
+
+                var encodedMessage = encodeURIComponent(
+                    "Name: " +
+                    fullName +
+                    "\n" +
+                    "Email: " +
+                    email +
+                    "\n" +
+                    "Date: " +
+                    date +
+                    "\n" +
+                    "Time: " +
+                    time +
+                    "\n" +
+                    "Service" +
+                    "\n" +
+                    service +
+                    "\n" +
+                    "Message: " +
+                    message
+                );
+
+                // Check if user is on a mobile device
+                if (
+                    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                        navigator.userAgent
+                    )
+                ) {
+                    // Mobile device, open WhatsApp
+                    var whatsappLink = `whatsapp://send?phone=${contact}&text=${encodedMessage}`;
+                    window.open(whatsappLink, "_blank");
+                } else {
+                    // Desktop device, open default email client
+                    emailjs
+                        .send("service_fx42pst", "template_2ngcxmf", {
+                            from_name: fullName,
+                            to_name: "The Glamour Lounge Unisex Salon",
+                            message: `Booking on ${date} at ${time}
+    Message : ${message}
+    Service : ${service}
+    Reply to ${email}`,
+                            reply_to: email,
+                        })
+                        .then(
+                            function (response) {
+                                alert("Mail Sent");
+                                document.getElementById("bookingForm").reset();
+                                console.log("response==>", response);
+                                // You can redirect or perform other actions after successful email sending
+                            },
+                            function (error) {
+                                alert("Error Sending Mail");
+                                console.log("error==>", error);
+                            }
+                        );
+                }
+            });
+    </script>
 </body>
 
 </html>

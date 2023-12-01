@@ -80,20 +80,10 @@
                     <a href="service.html" class="nav-item nav-link active">Services</a>
                     <a href="price.html" class="nav-item nav-link">Pricing</a>
                     <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="appointment.html" class="dropdown-item">Appointment</a>
-                            <a href="opening.html" class="dropdown-item">Open Hours</a>
-                            <a href="team.html" class="dropdown-item">Our Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        </div>
-                    </div>
+                    <a href="appointment.html" class="nav-item nav-link">Appointment</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact us</a>
                 </div>
-                <a href="" class="btn btn-primary d-none d-lg-block">Book Now</a>
-            </div>
+                <a href="#appointment" class="btn btn-primary d-none d-lg-block">Book Now</a>
         </nav>
     </div>
     <!-- Navbar End -->
@@ -189,65 +179,7 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center bg-appointment mx-0">
-            <div class="col-lg-6 py-5">
-                <div class="p-5 my-5" style="background: rgba(33, 30, 28, 0.7);">
-                    <h1 class="text-white text-center mb-4">Make Appointment</h1>
-                    <form>
-                        <div class="form-row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control bg-transparent p-4" placeholder="Your Name"
-                                        required="required" />
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <input type="email" class="form-control bg-transparent p-4" placeholder="Your Email"
-                                        required="required" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <div class="date" id="date" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent p-4 datetimepicker-input"
-                                            placeholder="Select Date" data-target="#date"
-                                            data-toggle="datetimepicker" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <div class="time" id="time" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent p-4 datetimepicker-input"
-                                            placeholder="Select Time" data-target="#time"
-                                            data-toggle="datetimepicker" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <select class="custom-select bg-transparent px-4" style="height: 47px;">
-                                        <option selected>Select A Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 1</option>
-                                        <option value="3">Service 1</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <button class="btn btn-primary btn-block" type="submit" style="height: 47px;">Make
-                                    Appointment</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+
     </div>
     <!-- Service End -->
 
@@ -313,9 +245,74 @@
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
+    <!-- Service Start -->
+    <div class="container-fluid px-0 py-2 my-2" id="appointment">
+        <div class="row justify-content-center bg-appointment mx-0">
+            <div class="col-lg-6 py-2">
+                <div class="p-5 my-5">
+                    <h1 class="text-center mb-2" style="color: white;">Make an Appointment</h1>
+                    <form id="bookingForm" class="bookingForm">
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control bg-transparent p-4 fullName"
+                                        placeholder="Your Name" id="fullName" required="required" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input id="mail" type="email" class="form-control bg-transparent p-4 mail"
+                                        placeholder="Your Email" required="required" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <div class="date" data-target-input="nearest">
+                                        <input id="date" type="date"
+                                            class="form-control bg-transparent p-4 datetimepicker-input date"
+                                            placeholder="Select Date" data-toggle="datetimepicker" />
 
-
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <div class="time" data-target-input="nearest">
+                                        <input id="time" type="time"
+                                            class="form-control bg-transparent p-4 datetimepicker-input time"
+                                            placeholder="Select Time" data-toggle="datetimepicker" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input id="message" type="text" class="form-control bg-transparent p-4 message"
+                                        placeholder="Message" required="required" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input id="message" type="text" class="form-control bg-transparent p-4 message"
+                                        placeholder="Message" required="required" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-12">
+                                <button class="btn btn-primary btn-block" type="submit" style="height: 47px;">Book
+                                    Appointment</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
     <!-- Footer Start -->
     <div class="footer container-fluid position-relative py-5" style="margin-top: 90px;background-color: #02445f;">
         <div class="container pt-5">
@@ -423,6 +420,20 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!--chatbot script-->
+    <!--Start of Tawk.to Script-->
+    <!-- <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6560ec7aba9fcf18a80e9f46/1hg19ng29';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script> -->
+    <!--End of Tawk.to Script-->
 </body>
 
 </html>
