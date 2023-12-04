@@ -5,12 +5,11 @@
     <meta charset="utf-8">
     <title>The Glamour Lounge Unisex Salon</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
-    <link rel="icon" type="image/x-icon" href="img/logo.jpeg">
+    <link rel="icon" type="image/x-icon" href="img/logo1.png" style="width:30px;">
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -360,35 +359,6 @@
     </div>
     <!--Gallery end-->
 
-    <script>
-        function showServices(category) {
-            // Hide all service lists
-            var serviceLists = document.querySelectorAll('.services');
-            serviceLists.forEach(function (list) {
-                list.style.display = 'none';
-            });
-
-            // Show the selected service list
-            var selectedList = document.getElementById(category + 'Services');
-            if (selectedList) {
-                selectedList.style.display = 'block';
-            }
-        }
-        function showService(category) {
-            // Hide all service lists
-            var serviceLists = document.querySelectorAll('.service');
-            serviceLists.forEach(function (list) {
-                list.style.display = 'none';
-            });
-
-            // Show the selected service list
-            var selectedList = document.getElementById(category + 'Service');
-            if (selectedList) {
-                selectedList.style.display = 'block';
-            }
-        }
-
-    </script>
 
 
     <!--Services1 start-->
@@ -508,11 +478,76 @@
                 font-weight: 700;
                 color: #02445f;
             }
-            
-            table,th,td{
-                border:1px solid #f9df7a;
+
+            table,
+            th,
+            td {
+                border: 1px solid #f9df7a;
+            }
+
+            .ser-btn {
+                padding: 12px 22px;
+                background-color: white;
+                outline: 0;
+                border: 1px solid white;
+                margin: 10px;
+                font-weight: 700;
+                color: #02445f;
+            }
+
+            .ser-btn.active {
+                background-color: #f9df7a;
+                color: white;
             }
         </style>
+        <script>
+            function showServices(category) {
+                // Hide all service lists
+                var serviceLists = document.querySelectorAll('.services');
+                serviceLists.forEach(function (list) {
+                    list.style.display = 'none';
+                });
+
+                // Show the selected service list
+                var selectedList = document.getElementById(category + 'Services');
+                if (selectedList) {
+                    selectedList.style.display = 'block';
+                }
+            }
+            function showService(category) {
+                // Hide all service lists
+                var serviceLists = document.querySelectorAll('.service');
+                serviceLists.forEach(function (list) {
+                    list.style.display = 'none';
+                });
+
+                // Show the selected service list
+                var selectedList = document.getElementById(category + 'Service');
+                if (selectedList) {
+                    selectedList.style.display = 'block';
+                }
+            }
+            //btns active
+            document.addEventListener('DOMContentLoaded', function () {
+                // Get all buttons with the class "btn"
+                const buttons = document.querySelectorAll('.ser-btn');
+
+                // Add click event listener to each button
+                buttons.forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        // Remove "active" class from all buttons
+                        buttons.forEach(function (btn) {
+                            btn.classList.remove('active');
+                        });
+
+                        // Add "active" class to the clicked button
+                        button.classList.add('active');
+                    });
+                });
+            });
+
+        </script>
+
         <div class="text-center ser">
             <button onclick="showServices('female')" class="btnS">Female Services</button>
             <button onclick="showServices('male')" class="btnS">Male Services</button>
@@ -520,23 +555,23 @@
             <div id="maleServices" class="services">
                 <h2>Male Services</h2>
                 <div>
-                    <button onclick="showService('serviceM1')">Beauty & Spa</button>
-                    <button onclick="showService('serviceM2')">Hair Cuts</button>
+                    <button class="ser-btn active" onclick="showService('serviceM1')">Beauty & Spa</button>
+                    <button class="ser-btn" onclick="showService('serviceM2')">Hair Cuts</button>
 
-                    <button onclick="showService('serviceM3')">Grooming Services</button>
-                    <button onclick="showService('serviceM4')">Hair Colour</button>
-                    <button onclick="showService('serviceM5')">treatments</button>
-                    <button onclick="showService('serviceM6')">Technical Services</button>
-                    <button onclick="showService('serviceM7')">Detan/Bleach</button>
-                    <button onclick="showService('serviceM8')">Waxing</button>
-                    <button onclick="showService('serviceM9')">Facials</button>
-                    <button onclick="showService('serviceM10')">LUXURY / Bridal Facials</button>
-                    <button onclick="showService('serviceM11')">Skin Treatments</button>
-                    <button onclick="showService('serviceM12')">Hand & feet Care </button>
-                    <button onclick="showService('serviceM13')">Spa Services </button>
-                    <button onclick="showService('serviceM14')">Body Spa </button>
+                    <button class="ser-btn" onclick="showService('serviceM3')">Grooming Services</button>
+                    <button class="ser-btn" onclick="showService('serviceM4')">Hair Colour</button>
+                    <button class="ser-btn" onclick="showService('serviceM5')">treatments</button>
+                    <button class="ser-btn" onclick="showService('serviceM6')">Technical Services</button>
+                    <button class="ser-btn" onclick="showService('serviceM7')">Detan/Bleach</button>
+                    <button class="ser-btn" onclick="showService('serviceM8')">Waxing</button>
+                    <button class="ser-btn" onclick="showService('serviceM9')">Facials</button>
+                    <button class="ser-btn" onclick="showService('serviceM10')">LUXURY / Bridal Facials</button>
+                    <button class="ser-btn" onclick="showService('serviceM11')">Skin Treatments</button>
+                    <button class="ser-btn" onclick="showService('serviceM12')">Hand & feet Care </button>
+                    <button class="ser-btn" onclick="showService('serviceM13')">Spa Services </button>
+                    <button class="ser-btn" onclick="showService('serviceM14')">Body Spa </button>
 
-                   
+
                 </div>
                 <ul class="service" id="serviceM1Service">
                     helll1
@@ -682,12 +717,12 @@
                         <li>1000</li>
                         <li>1000</li>
                         <li>500</li>
-                         <li>400</li>
+                        <li>400</li>
                         <li>3500</li>
-                        <li>400</li> 
-                        <li>200</li> 
-                     </ul>
-                     <ul>
+                        <li>400</li>
+                        <li>200</li>
+                    </ul>
+                    <ul>
                         <li>Member</li>
                         <li>480</li>
                         <li>720</li>
@@ -700,7 +735,7 @@
                         <li>2800</li>
                         <li>320</li>
                         <li>160</li>
-                     </ul>
+                    </ul>
                 </ul>
                 <ul class="service" id="serviceM8Service">
                     <ul>
@@ -728,137 +763,137 @@
                     </ul>
                 </ul>
                 <ul class="service" id="serviceM9Service">
-                    <table style="width:100%">
+                    <table style="width:85%">
                         <tr>
-                          <th>CLEAN UP</th>
-                          <th>Regular</th>
-                          <th>Member</th>
+                            <th>CLEAN UP</th>
+                            <th>Regular</th>
+                            <th>Member</th>
                         </tr>
                         <tr>
-                          <td>Fruit</td>
-                          <td>1000/-</td>
-                          <td>800/-</td>
+                            <td>Fruit</td>
+                            <td>1000/-</td>
+                            <td>800/-</td>
                         </tr>
                         <tr>
-                          <td>Dry Skin</td>
-                          <td>1000/-</td>
-                          <td>800/-</td>
+                            <td>Dry Skin</td>
+                            <td>1000/-</td>
+                            <td>800/-</td>
                         </tr>
                         <tr>
                             <td>Oily Skin</td>
                             <td>1000/-</td>
                             <td>800/-</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>Acne Cleanup</td>
                             <td>1200/-</td>
                             <td>960/-</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>Whitening Clean Up</td>
                             <td>1200/-</td>
                             <td>960/-</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <th>BASIC FACIALS</th>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>Gold Facial</td>
                             <td>1500/-</td>
                             <td>1200/-</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>Pearl Facial</td>
                             <td>1700/-</td>
                             <td>1360/-</td>
-                          </tr>
-                          <tr>
-                            <td>Diamond  Facial</td>
+                        </tr>
+                        <tr>
+                            <td>Diamond Facial</td>
                             <td>1800/-</td>
                             <td>1440/-</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>Fresh Fruit Facial</td>
                             <td>1800/-</td>
                             <td>1440/-</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>Wine Facial</td>
                             <td>2000/-</td>
                             <td>1600/-</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>Mint Facial</td>
                             <td>2000/-</td>
                             <td>1600/-</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <th>ADVANCE FACIALS</th>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>Skin Brightning Facial</td>
                             <td>2300/-</td>
                             <td>1840/-</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>Multi Vitamin Facial</td>
                             <td>2300/-</td>
                             <td>1840/-</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>Tan Clear Facial</td>
                             <td>2500/-</td>
                             <td>2000/-</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>Signature Facial</td>
                             <td>2750/-</td>
                             <td>2200/-</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>LOTUS Vitalizing Facial</td>
                             <td>3000/-</td>
                             <td>2400/-</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>O3 Basic Facial</td>
                             <td>3500/-</td>
                             <td>2800/-</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>Regenerating Youth Uplift Facial</td>
                             <td>3800/-</td>
                             <td>3040/-</td>
-                          </tr>
-                      </table>
+                        </tr>
+                    </table>
                 </ul>
                 <ul class="service" id="serviceM10Service">
                     <table style="width:85%">
                         <tr>
-                          <th>LUXURY / BRIDAL FACIALS</th>
-                          <th>Regular</th>
-                          <th>Member</th>
+                            <th>LUXURY / BRIDAL FACIALS</th>
+                            <th>Regular</th>
+                            <th>Member</th>
                         </tr>
                         <tr>
-                          <td>Fair & Glow Facial</td>
-                          <td>4500/-</td>
-                          <td>3600/-</td>
+                            <td>Fair & Glow Facial</td>
+                            <td>4500/-</td>
+                            <td>3600/-</td>
                         </tr>
                         <tr>
                             <td>Platinum FACIALS</td>
                             <td>5000/-</td>
                             <td>4000/-</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>Lotus Advance Whitening Facial</td>
                             <td>6000/-</td>
                             <td>4800/-</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>O3 + Advance Whitening Facial</td>
                             <td>6500/-</td>
                             <td>5200/-</td>
-                          </tr>
+                        </tr>
                     </table>
                 </ul>
                 <ul class="service" id="serviceM11Service">
@@ -887,7 +922,7 @@
                             <td>1200/-</td>
                         </tr>
                         <tr>
-                            <td>Rose Peel Off  Mask</td>
+                            <td>Rose Peel Off Mask</td>
                             <td>1500/-</td>
                             <td>1200/-</td>
                         </tr>
@@ -900,7 +935,7 @@
 
 
 
-        
+
                 </ul>
                 <ul class="service" id="serviceM12Service">
                     <table style="width: 88%">
@@ -982,7 +1017,7 @@
                 <ul class="service" id="serviceM13Service">
                     <table style="width: 85%">
                         <tr>
-                            
+
                             <th>OLD HEAD MASSAGE</th>
                             <th>Regular</th>
                             <th>Member</th>
@@ -998,7 +1033,7 @@
                             <td>640/-</td>
                         </tr>
                         <tr>
-                            <td>Almond  Oil</td>
+                            <td>Almond Oil</td>
                             <td>900/-</td>
                             <td>720/-</td>
                         </tr>
@@ -1008,60 +1043,60 @@
                             <td>720/-</td>
                         </tr>
                         <tr>
-                        <th>MASSAGES</th>
-                    </tr>
-                    <tr>
-                        <td>Hands Massage (30 Mins)</td>
-                        <td>1300/-</td>
-                        <td>1040/-</td>
-                    </tr>
-                    <tr>
-                        <td>Foot Refiexology (30 Mins)</td>
-                        <td>1500/-</td>
-                        <td>1200/-</td>
-                    </tr>
-                    <tr>
-                        <td>Foot Refiexology (45 Mins)</td>
-                        <td>1800/-</td>
-                        <td>1500/-</td>
-                    </tr>
-                    <tr>
-                        <td>Neck & Back Massage (30 Mins)</td>
-                        <td>1500/-</td>
-                        <td>1200/-</td>
-                    </tr>
-                    <tr>
-                        <td>Leg Massage (30 Mins)</td>
-                        <td>1900/-</td>
-                        <td>1520/-</td>
-                    </tr>
-                    <tr>
-                        <td>Swedist Therapy (45 Mins)</td>
-                        <td>2500/-</td>
-                        <td>2000/-</td>
-                    </tr>
-                    <tr>
-                        <td>Swedist Therapy (60 Mins)</td>
-                        <td>3000/-</td>
-                        <td>2400/-</td>
-                    </tr>
-                    <tr>
-                        <td>Deep Tissue Therapy (45 Mins)</td>
-                        <td>2500/-</td>
-                        <td>2000/-</td>
-                    </tr>
-                    <tr>
-                        <td>Deep Tissue Therapy (60 Mins)</td>
-                        <td>3000/-</td>
-                        <td>2400/-</td>
-                    </tr>
+                            <th>MASSAGES</th>
+                        </tr>
+                        <tr>
+                            <td>Hands Massage (30 Mins)</td>
+                            <td>1300/-</td>
+                            <td>1040/-</td>
+                        </tr>
+                        <tr>
+                            <td>Foot Refiexology (30 Mins)</td>
+                            <td>1500/-</td>
+                            <td>1200/-</td>
+                        </tr>
+                        <tr>
+                            <td>Foot Refiexology (45 Mins)</td>
+                            <td>1800/-</td>
+                            <td>1500/-</td>
+                        </tr>
+                        <tr>
+                            <td>Neck & Back Massage (30 Mins)</td>
+                            <td>1500/-</td>
+                            <td>1200/-</td>
+                        </tr>
+                        <tr>
+                            <td>Leg Massage (30 Mins)</td>
+                            <td>1900/-</td>
+                            <td>1520/-</td>
+                        </tr>
+                        <tr>
+                            <td>Swedist Therapy (45 Mins)</td>
+                            <td>2500/-</td>
+                            <td>2000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Swedist Therapy (60 Mins)</td>
+                            <td>3000/-</td>
+                            <td>2400/-</td>
+                        </tr>
+                        <tr>
+                            <td>Deep Tissue Therapy (45 Mins)</td>
+                            <td>2500/-</td>
+                            <td>2000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Deep Tissue Therapy (60 Mins)</td>
+                            <td>3000/-</td>
+                            <td>2400/-</td>
+                        </tr>
 
                     </table>
                 </ul>
                 <ul class="service" id="serviceM14Service">
                     <table style="width: 85%">
                         <tr>
-                            
+
                             <th>Body Spa</th>
                             <th>Regular</th>
                             <th>Member</th>
@@ -1130,39 +1165,39 @@
             <div id="femaleServices" class="services">
                 <h2>Female Services</h2>
                 <div>
-                    <button onclick="showService('service1')">FAMILY PACKAGES</button>
-                    <button onclick="showService('service2')">Hair Cuts</button>
-                    <button onclick="showService('service3')">Styling</button>
-                    <button onclick="showService('service4')">Treatments</button>
-                    <button onclick="showService('service5')">Hair Colour</button>
-                    <button onclick="showService('service6')">Technical Services</button>
-                    <button onclick="showService('service7')">Regular Waxing & Rica Waxing</button>
-                    <button onclick="showService('service8')">Spa Services</button>
-                    <button onclick="showService('service9')">Skin Treatments</button>
-                    <button onclick="showService('service10')">Facials</button>
-                    <button onclick="showService('service11')">Women Beauty Services</button>
-                    <button onclick="showService('service12')">Detan/Bleach</button>
+                    <button class="ser-btn" onclick="showService('service1')">FAMILY PACKAGES</button>
+                    <button class="ser-btn" onclick="showService('service2')">Hair Cuts</button>
+                    <button class="ser-btn" onclick="showService('service3')">Styling</button>
+                    <button class="ser-btn" onclick="showService('service4')">Treatments</button>
+                    <button class="ser-btn" onclick="showService('service5')">Hair Colour</button>
+                    <button class="ser-btn" onclick="showService('service6')">Technical Services</button>
+                    <button class="ser-btn" onclick="showService('service7')">Regular Waxing & Rica Waxing</button>
+                    <button class="ser-btn" onclick="showService('service8')">Spa Services</button>
+                    <button class="ser-btn" onclick="showService('service9')">Skin Treatments</button>
+                    <button class="ser-btn" onclick="showService('service10')">Facials</button>
+                    <button class="ser-btn" onclick="showService('service11')">Women Beauty Services</button>
+                    <button class="ser-btn" onclick="showService('service12')">Detan/Bleach</button>
                 </div>
                 <ul class="service" id="service1Service">
                     <table style="width: 85%">
                         <th>Rejuvenate Yourself & Your Family With Our Special family Packages</th>
-                       
+
                     </table>
                     <table style="width:85%">
-                        
+
                         <tr>
-                          <th>Package</th>
-                          <th>Amount To Be Paid</th>
-                          <th>Services</th>
-                          <th>Validity</th>
-                          <th>Discount</th>
+                            <th>Package</th>
+                            <th>Amount To Be Paid</th>
+                            <th>Services</th>
+                            <th>Validity</th>
+                            <th>Discount</th>
                         </tr>
                         <tr>
-                          <td>Silver</td>
-                          <td>7500/-</td>
-                          <td>11000/-</td>
-                          <td>3 MONTHS</td>
-                          <td>31%</td>
+                            <td>Silver</td>
+                            <td>7500/-</td>
+                            <td>11000/-</td>
+                            <td>3 MONTHS</td>
+                            <td>31%</td>
                         </tr>
                         <tr>
                             <td>Gold</td>
@@ -1177,21 +1212,21 @@
                             <td>60000/-</td>
                             <td>9 MONTHS</td>
                             <td>50%</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td>Platinum</td>
                             <td>60000/-</td>
                             <td>120000/-</td>
                             <td>12 MONTHS</td>
                             <td>50%</td>
-                          </tr>
-                        </table>
-                        <table style="width: 85%">
-                            <th>INCLUDES ALL HAIR, BEAUTY AND SPA SERVICES, DOESNOT INCLUDE MAKEUP SERVICES</th>
-                           
-                        </table>
-                         </ul>
-                
+                        </tr>
+                    </table>
+                    <table style="width: 85%">
+                        <th>INCLUDES ALL HAIR, BEAUTY AND SPA SERVICES, DOESNOT INCLUDE MAKEUP SERVICES</th>
+
+                    </table>
+                </ul>
+
                 <ul id="service1Service" class="service">
                     <li>
                         <div
@@ -1697,7 +1732,7 @@
 
 
     <!-- Pricing Start women -->
-    <div class="container-fluid bg-pricing" style="margin: 90px 0;">
+    <div class="container-fluid bg-pricing">
         <h2 class="text-center">Female Pricing</h2>
         <div class="container">
             <div class="row">
@@ -1795,7 +1830,7 @@
     </div>
     <!-- Pricing End women -->
     <!-- Pricing Start men -->
-    <div class="container-fluid bg-pricing" style="margin: 90px 0;background: url('./img/landingapgemal1.jpg');">
+    <div class="container-fluid bg-pricing" style="background: url('./img/landingapgemal1.jpg');">
         <h2 class="text-center">Male Pricing</h2>
         <div class="container">
             <div class="row">
