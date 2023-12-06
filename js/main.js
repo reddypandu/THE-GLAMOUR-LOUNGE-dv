@@ -154,3 +154,21 @@ const filter = function () {
 };
 
 addEventOnElem(filterBtns, "click", filter);
+//remove .html extension when hover
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".navbar-nav a");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("mouseover", function () {
+      const originalHref = link.getAttribute("href");
+      const cleanHref = originalHref.replace(".html", "");
+      link.setAttribute("href", cleanHref);
+    });
+
+    link.addEventListener("mouseout", function () {
+      const originalHref = link.getAttribute("href");
+      const restoreHref = originalHref + ".html";
+      link.setAttribute("href", restoreHref);
+    });
+  });
+});

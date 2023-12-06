@@ -3,14 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SPA Center - Beauty & Spa HTML Template</title>
+    <title>The Glamour Lounge Salon</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-    <link rel="icon" type="image/x-icon" href="img/logo.jpeg">
+    <link rel="icon" type="image/x-icon" href="img/favicon2.png">
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -25,6 +23,15 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!--book table script-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('39hCsEwrxcKGEpEyd');
+        })();
+    </script>
+    <!--book table script-->
 </head>
 
 <body>
@@ -64,10 +71,10 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid p-0">
+    <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light py-3 py-lg-0 px-lg-5">
             <a href="index.html" class="navbar-brand ml-lg-3">
-                <img src="./img/logo.jpeg" alt="" style="width:200px" />
+                <img src="./img/logoColor.png" alt="" style="width:200px" />
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"
                 style="background-color: #f9df7a; box-shadow: 0px 2px 10px #f9df7a;">
@@ -75,15 +82,16 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav m-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link active">Services</a>
-                    <a href="price.html" class="nav-item nav-link">Pricing</a>
-                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                    <a href="appointment.html" class="nav-item nav-link">Appointment</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact us</a>
+                    <a href="Home.html" class="nav-item nav-link nav">Home</a>
+                    <a href="about.html" class="nav-item nav-link nav">About</a>
+                    <a href="service.html" class="nav-item nav-link active nav">Services</a>
+
+                    <a href="gallery.html" class="nav-item nav-link nav">Gallery</a>
+
+                    <a href="contact.html" class="nav-item nav-link nav">Contact us</a>
                 </div>
-                <a href="#appointment" class="btn btn-primary d-none d-lg-block">Book Now</a>
+                <a href="#appointment" class="btn btn-primary d-none d-lg-block nav" style="padding-left: 10px;">Book
+                    Now</a>
         </nav>
     </div>
     <!-- Navbar End -->
@@ -104,22 +112,24 @@
 
 
     <!-- Service Start -->
-    <div class="container-fluid px-0 py-5 my-5">
-        <div class="row mx-0 justify-content-center text-center">
+    <div class="container-fluid px-0 py-5 my-5" style="background-color: #02445f;">
+        <!-- <div class="row mx-0 justify-content-center text-center">
             <div class="col-lg-6">
                 <h6 class="d-inline-block bg-light text-primary text-uppercase py-1 px-2">Our Service</h6>
                 <h1>Spa & Beauty Services</h1>
             </div>
-        </div>
+        </div> -->
         <div class="owl-carousel service-carousel">
+
             <div class="service-item position-relative">
                 <img class="img-fluid" src="img/service-1.jpg" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Body Massage</h4>
-                    <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo
-                        sit ipsum</p>
+                    <p class="text-white px-3 mb-3">
+                        A body massage involves the manipulation of soft tissues to enhance physical and mental
+                        well-being through techniques such as rubbing, kneading, and applying pressure.</p>
                     <div class="w-100 bg-white text-center p-4">
-                        <a class="btn btn-primary" href="">Make Order</a>
+                        <a class="btn btn-primary" href="#footer">Visit Now</a>
                     </div>
                 </div>
             </div>
@@ -127,10 +137,11 @@
                 <img class="img-fluid" src="img/service-2.jpg" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Stone Therapy</h4>
-                    <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo
-                        sit ipsum</p>
+                    <p class="text-white px-3 mb-3">Stone therapy, also known as hot stone massage, involves placing
+                        heated stones on the body to enhance relaxation and promote healing during a massage session.
+                    </p>
                     <div class="w-100 bg-white text-center p-4">
-                        <a class="btn btn-primary" href="">Make Order</a>
+                        <a class="btn btn-primary" href="#footer">Visit Now</a>
                     </div>
                 </div>
             </div>
@@ -138,10 +149,12 @@
                 <img class="img-fluid" src="img/service-3.jpg" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Facial Therapy</h4>
-                    <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo
-                        sit ipsum</p>
+                    <p class="text-white px-3 mb-3">
+                        Facial therapy involves specialized skincare treatments designed to improve and maintain the
+                        health and appearance of the face, addressing concerns such as aging, acne, and overall skin
+                        rejuvenation.</p>
                     <div class="w-100 bg-white text-center p-4">
-                        <a class="btn btn-primary" href="">Make Order</a>
+                        <a class="btn btn-primary" href="#footer">Visit Now</a>
                     </div>
                 </div>
             </div>
@@ -149,10 +162,11 @@
                 <img class="img-fluid" src="img/service-4.jpg" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Skin Care</h4>
-                    <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo
-                        sit ipsum</p>
+                    <p class="text-white px-3 mb-3">"Skin care involves maintaining and enhancing the health and
+                        appearance of the skin through cleansing, moisturizing, protection from the sun, and other
+                        practices."</p>
                     <div class="w-100 bg-white text-center p-4">
-                        <a class="btn btn-primary" href="">Make Order</a>
+                        <a class="btn btn-primary" href="#footer">Visit Now</a>
                     </div>
                 </div>
             </div>
@@ -160,10 +174,10 @@
                 <img class="img-fluid" src="img/service-5.jpg" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Stream Bath</h4>
-                    <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo
-                        sit ipsum</p>
+                    <p class="text-white px-3 mb-3">Stream bathing involves immersing oneself in natural water bodies
+                        like streams, providing a therapeutic experience that promotes relaxation and well-being.</p>
                     <div class="w-100 bg-white text-center p-4">
-                        <a class="btn btn-primary" href="">Make Order</a>
+                        <a class="btn btn-primary" href="#footer">Visit Now</a>
                     </div>
                 </div>
             </div>
@@ -171,24 +185,1696 @@
                 <img class="img-fluid" src="img/service-6.jpg" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Face Masking</h4>
-                    <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo
-                        sit ipsum</p>
+                    <p class="text-white px-3 mb-3">Face masking involves applying a protective covering over the nose
+                        and mouth, typically a cloth or medical mask, to reduce the spread of respiratory droplets and
+                        protect against the transmission of infectious agents.</p>
                     <div class="w-100 bg-white text-center p-4">
-                        <a class="btn btn-primary" href="">Make Order</a>
+                        <a class="btn btn-primary" href="#footer">Visit Now</a>
                     </div>
                 </div>
             </div>
         </div>
+        <style>
+            .services {
+                display: none;
+            }
 
+            .service {
+                display: none;
+            }
+
+            .ser .btnS {
+                padding: 12px 22px;
+
+                outline: 0;
+                border: 1px solid white;
+                margin: 10px;
+                font-weight: 700;
+                color: #02445f;
+            }
+
+            .ser .btnS.active {
+                background-color: #f9df7a;
+                color: white;
+            }
+
+            table,
+            th,
+            td {
+                border: 1px solid #f9df7a;
+            }
+
+            .ser-btn {
+                padding: 12px 22px;
+                background-color: white;
+                outline: 0;
+                border: 1px solid white;
+                margin: 10px;
+                font-weight: 700;
+                color: #02445f;
+            }
+
+            .ser-btn.active {
+                background-color: #f9df7a;
+                color: white;
+            }
+        </style>
+        <script>
+            function showServices(category) {
+                // Hide all service lists
+                var serviceLists = document.querySelectorAll('.services');
+                serviceLists.forEach(function (list) {
+                    list.style.display = 'none';
+                });
+
+                // Show the selected service list
+                var selectedList = document.getElementById(category + 'Services');
+                if (selectedList) {
+                    selectedList.style.display = 'block';
+                }
+            }
+            function showService(category) {
+                // Hide all service lists
+                var serviceLists = document.querySelectorAll('.service');
+                serviceLists.forEach(function (list) {
+                    list.style.display = 'none';
+                });
+
+                // Show the selected service list
+                var selectedList = document.getElementById(category + 'Service');
+                if (selectedList) {
+                    selectedList.style.display = 'block';
+                }
+            }
+            //btns active
+            document.addEventListener('DOMContentLoaded', function () {
+                // Get all buttons with the class "btn"
+                const buttons = document.querySelectorAll('.ser-btn');
+
+                // Add click event listener to each button
+                buttons.forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        // Remove "active" class from all buttons
+                        buttons.forEach(function (btn) {
+                            btn.classList.remove('active');
+                        });
+
+                        // Add "active" class to the clicked button
+                        button.classList.add('active');
+                    });
+                });
+            });
+            //btnS active
+            document.addEventListener('DOMContentLoaded', function () {
+                // Get all buttons with the class "btn"
+                const buttons = document.querySelectorAll('.ser .btnS');
+
+                // Add click event listener to each button
+                buttons.forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        // Remove "active" class from all buttons
+                        buttons.forEach(function (btn) {
+                            btn.classList.remove('active');
+                        });
+
+                        // Add "active" class to the clicked button
+                        button.classList.add('active');
+                    });
+                });
+            });
+
+        </script>
+
+        <div class="text-center ser">
+            <button onclick="showServices('female')" class="btnS">Female Services</button>
+            <button onclick="showServices('male')" class="btnS">Male Services</button>
+
+            <div id="maleServices" class="services">
+                <h2>Male Services</h2>
+                <div>
+                    <button class="ser-btn active" onclick="showService('serviceM1')">Beauty & Spa</button>
+                    <button class="ser-btn" onclick="showService('serviceM2')">Hair Cuts</button>
+
+                    <button class="ser-btn" onclick="showService('serviceM3')">Grooming Services</button>
+                    <button class="ser-btn" onclick="showService('serviceM4')">Hair Colour</button>
+                    <button class="ser-btn" onclick="showService('serviceM5')">treatments</button>
+                    <button class="ser-btn" onclick="showService('serviceM6')">Technical Services</button>
+                    <button class="ser-btn" onclick="showService('serviceM7')">Detan/Bleach</button>
+                    <button class="ser-btn" onclick="showService('serviceM8')">Waxing</button>
+                    <button class="ser-btn" onclick="showService('serviceM9')">Facials</button>
+                    <button class="ser-btn" onclick="showService('serviceM10')">LUXURY / Bridal Facials</button>
+                    <button class="ser-btn" onclick="showService('serviceM11')">Skin Treatments</button>
+                    <button class="ser-btn" onclick="showService('serviceM12')">Hand & feet Care </button>
+                    <button class="ser-btn" onclick="showService('serviceM13')">Spa Services </button>
+                    <button class="ser-btn" onclick="showService('serviceM14')">Body Spa </button>
+
+
+                </div>
+                <ul class="service" id="serviceM1Service">
+                    <h3>Spa Services</h3>
+                    <table style="width:85%">
+                        <tr>
+                            <th>OIL HEAD MASSAGE</th>
+                            <th>Regular</th>
+                            <th>Member</th>
+                        </tr>
+                        <tr>
+                            <td>Coconut Oil</td>
+                            <td>800/-</td>
+                            <td>640/-</td>
+                        </tr>
+                        <tr>
+                            <td>Cooling Oil</td>
+                            <td>800/-</td>
+                            <td>640/-</td>
+                        </tr>
+                        <tr>
+                            <td>Almond Oil</td>
+                            <td>900/-</td>
+                            <td>720/-</td>
+                        </tr>
+                        <tr>
+                            <td>live Oil</td>
+                            <td>900/-</td>
+                            <td>720/-</td>
+                        </tr>
+                        <tr>
+                            <th>MASSAGES</th>
+                        </tr>
+                        <tr>
+                            <td>Hands Massage(30 Mins)</td>
+                            <td>1300/-</td>
+                            <td>1040/-</td>
+                        </tr>
+                        <tr>
+                            <td>Foot Reflexology(30 Mins)</td>
+                            <td>900/-</td>
+                            <td>720/-</td>
+                        </tr>
+                        <tr>
+                            <td>Foot Reflexology(45 Mins)</td>
+                            <td>1800/-</td>
+                            <td>1500/-</td>
+                        </tr>
+                        <tr>
+                            <td>Neck & Back Massage (30 Mins)</td>
+                            <td>1500/-</td>
+                            <td>1200/-</td>
+                        </tr>
+                        <tr>
+                            <td>Leg Massage (30 Mins)</td>
+                            <td>1900/-</td>
+                            <td>1520/-</td>
+                        </tr>
+                        <tr>
+                            <td>Swedish therapy(45 Mins)</td>
+                            <td>2500/-</td>
+                            <td>2000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Swedish therapy(60 Mins)</td>
+                            <td>3000/-</td>
+                            <td>2400/-</td>
+                        </tr>
+                        <tr>
+                            <td>Deep Tissue therapy(45 Mins)</td>
+                            <td>2500/-</td>
+                            <td>2000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Deep TIssue therapy(60 Mins)</td>
+                            <td>3000/-</td>
+                            <td>2400/-</td>
+                        </tr>
+                    </table>
+                    <h3>Body Spa</h3>
+                    <table style="width:85%">
+                        <tr>
+                            <th>Body Spa</th>
+                            <th>Regular</th>
+                            <th>Member</th>
+                        </tr>
+                        <tr>
+                            <td>Full Hand Polish</td>
+                            <td>1600/-</td>
+                            <td>1280/-</td>
+                        </tr>
+                        <tr>
+                            <td>Full Legs Polish</td>
+                            <td>2000/-</td>
+                            <td>1600/-</td>
+                        </tr>
+                        <tr>
+                            <td>Full Back Polish</td>
+                            <td>1800/-</td>
+                            <td>1440/-</td>
+                        </tr>
+                        <tr>
+                            <td>Full Front Polish</td>
+                            <td>1800/-</td>
+                            <td>1440/-</td>
+                        </tr>
+                        <tr>
+                            <td>Full Body Scrub</td>
+                            <td>4000/-</td>
+                            <td>3200/-</td>
+                        </tr>
+                        <tr>
+                            <td>Full Body Polish</td>
+                            <td>6500/-</td>
+                            <td>5200/-</td>
+                        </tr>
+                        <tr>
+                            <td>Full Body Deton + Polish</td>
+                            <td>8000/-</td>
+                            <td>6400/-</td>
+                        </tr>
+                        <tr>
+                            <td>GROOM MAKE UP</td>
+                            <td>8000/-</td>
+                            <td>6400/-</td>
+                        </tr>
+                    </table>
+                </ul>
+                <ul class="service" id="serviceM2Service">
+                    <h4>Hair Cut </h4>
+                    <table style="width:85%;">
+                        <tr>
+                            <th>Hair Cut</th>
+                            <th>Regular</th>
+                            <th>Member</th>
+                        </tr>
+                        <tr>
+                            <td>Hair Cut</td>
+                            <td>650/-</td>
+                            <td>520/-</td>
+                        </tr>
+                        <tr>
+                            <td>Baby Cut Under 10 Yrs</td>
+                            <td>400/-</td>
+                            <td>320/-</td>
+                        </tr>
+                    </table>
+                </ul>
+                <ul class="service" id="serviceM3Service">
+                    <h4>Grooming Services</h4>
+                    <table style="width:85%;">
+                        <tr>
+                            <th>Grooming</th>
+                            <th>Regular</th>
+                            <th>Member</th>
+                        </tr>
+                        <tr>
+                            <td>Clean Shave</td>
+                            <td>300/-</td>
+                            <td>240/-</td>
+                        </tr>
+                        <tr>
+                            <td>Beard Trimming</td>
+                            <td>200/-</td>
+                            <td>160/-</td>
+                        </tr>
+                        <tr>
+                            <td>Beard Styling</td>
+                            <td>350/-</td>
+                            <td>280/-</td>
+                        </tr>
+                    </table>
+                </ul>
+                <ul class="service" id="serviceM4Service">
+                    <h4>Colour</h4>
+                    <table style="width: 85%;">
+                        <tr>
+                            <th>Colour</th>
+                            <th>Regular</th>
+                            <th>Member</th>
+                        </tr>
+                        <tr>
+                            <td>Basic Colour(L'oreal)</td>
+                            <td>1200</td>
+                            <td>960</td>
+                        </tr>
+                        <tr>
+                            <td>Basic Colour (Inoa)</td>
+                            <td>1400</td>
+                            <td>1120</td>
+                        </tr>
+                        <tr>
+                            <td>Fashion Colour (L'oreal)</td>
+                            <td>1800</td>
+                            <td>1440</td>
+                        </tr>
+                        <tr>
+                            <td>Fashion Colour (Inoa)</td>
+                            <td>2000</td>
+                            <td>1600</td>
+                        </tr>
+                        <tr>
+                            <td>Beard Colour</td>
+                            <td>450</td>
+                            <td>360</td>
+                        </tr>
+                        <tr>
+                            <td>Moustache Colour</td>
+                            <td>300</td>
+                            <td>240</td>
+                        </tr>
+                        <tr>
+                            <td>Streake (Per Streak)</td>
+                            <td>300</td>
+                            <td>240</td>
+                        </tr>
+                    </table>
+                </ul>
+                <ul class="service" id="serviceM5Service">
+                    <h4>Treatments</h4>
+                    <table style="width:85%;">
+                        <tr>
+                            <th>Treatments</th>
+                            <th>Regular</th>
+                            <th>Member</th>
+                        </tr>
+                        <tr>
+                            <td>Moroccon Hair Spa</td>
+
+                            <td>2000</td>
+                            <td>1600</td>
+                        </tr>
+                        <tr>
+                            <td>Keratine Hair Spa</td>
+                            <td>1800</td>
+                            <td>1440</td>
+                        </tr>
+                        <tr>
+
+                            <td>mythic Oil Hair Spa</td>
+                            <td>1600</td>
+                            <td>1280</td>
+                        </tr>
+                        <tr>
+                            <td>L'oreal hair spa</td>
+                            <td>1300/-</td>
+                            <td>1040/-</td>
+                        </tr>
+                        <tr>
+                            <td>Sensitive / Dry Scalp Treatment</td>
+                            <td>1800/-</td>
+                            <td>1440/-</td>
+                        </tr>
+                        <tr>
+                            <td>Anti Dandruff treatment</td>
+                            <td>1800/-</td>
+                            <td>1440/-</td>
+                        </tr>
+                        <tr>
+                            <td>Anti Hairfall Treatment</td>
+                            <td>1800/-</td>
+                            <td>1440/-</td>
+                        </tr>
+                        <tr>
+                            <td>Deep Conditioning</td>
+                            <td>1000/-</td>
+                            <td>800/-</td>
+                        </tr>
+                    </table>
+                </ul>
+                <ul class="service" id="serviceM6Service">
+                    <h4>Technical Services</h4>
+                    <table style="width:85%;">
+                        <tr>
+                            <th>Technical</th>
+                            <th>Regular</th>
+                            <th>Member</th>
+                        </tr>
+                        <tr>
+                            <td>Straightening/Smoothening/Rebonding</td>
+                            <td>4500+</td>
+                            <td>3600+</td>
+
+                        </tr>
+                        <tr>
+                            <td>Cystein.Keratin</td>
+                            <td>4500+</td>
+                            <td>3600+</td>
+                        </tr>
+                    </table>
+                </ul>
+                <ul class="service" id="serviceM7Service">
+                    <h4>Detan/Bleach</h4>
+                    <ul>
+                        <li>Face</li>
+                        <li>Face & Neck</li>
+                        <li>Arms</li>
+                        <li>Legs</li>
+                        <li>Full Front</li>
+                        <li>Full Back</li>
+                        <li>Feet</li>
+                        <li>Palms</li>
+                        <li>Full Body</li>
+                        <li>Under Arms</li>
+                        <li>Upper Lips</li>
+                    </ul>
+                    <ul>
+                        <li>Regular</li>
+                        <li>600</li>
+                        <li>900</li>
+                        <li>1200</li>
+                        <li>1500</li>
+                        <li>1000</li>
+                        <li>1000</li>
+                        <li>500</li>
+                        <li>400</li>
+                        <li>3500</li>
+                        <li>400</li>
+                        <li>200</li>
+                    </ul>
+                    <ul>
+                        <li>Member</li>
+                        <li>480</li>
+                        <li>720</li>
+                        <li>960</li>
+                        <li>1200</li>
+                        <li>800</li>
+                        <li>800</li>
+                        <li>400</li>
+                        <li>320</li>
+                        <li>2800</li>
+                        <li>320</li>
+                        <li>160</li>
+                    </ul>
+                </ul>
+                <ul class="service" id="serviceM8Service">
+                    <h4>Waxing</h4>
+                    <table style="width:85%;">
+                        <tr>
+                            <th>Waxing</th>
+                            <th>Regular</th>
+                            <th>Member</th>
+                        </tr>
+                        <tr>
+                            <td>Full Arms</td>
+                            <td>1100</td>
+                            <td>800</td>
+                        </tr>
+                        <tr>
+                            <td>Legs</td>
+                            <td>1300</td>
+                            <td>1040</td>
+                        </tr>
+                        <tr>
+                            <td>Under Arms</td>
+                            <td>500</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <td>Full Front</td>
+                            <td>1300</td>
+                            <td>1040</td>
+                        </tr>
+                        <tr>
+                            <td>Full Back</td>
+                            <td>1300</td>
+                            <td>1040</td>
+                        </tr>
+                    </table>
+                </ul>
+                <ul class="service" id="serviceM9Service">
+                    <h4>Facials</h4>
+                    <table style="width:85%">
+                        <tr>
+                            <th>CLEAN UP</th>
+                            <th>Regular</th>
+                            <th>Member</th>
+                        </tr>
+                        <tr>
+                            <td>Fruit</td>
+                            <td>1000/-</td>
+                            <td>800/-</td>
+                        </tr>
+                        <tr>
+                            <td>Dry Skin</td>
+                            <td>1000/-</td>
+                            <td>800/-</td>
+                        </tr>
+                        <tr>
+                            <td>Oily Skin</td>
+                            <td>1000/-</td>
+                            <td>800/-</td>
+                        </tr>
+                        <tr>
+                            <td>Acne Cleanup</td>
+                            <td>1200/-</td>
+                            <td>960/-</td>
+                        </tr>
+                        <tr>
+                            <td>Whitening Clean Up</td>
+                            <td>1200/-</td>
+                            <td>960/-</td>
+                        </tr>
+                        <tr>
+                            <th>BASIC FACIALS</th>
+                        </tr>
+                        <tr>
+                            <td>Gold Facial</td>
+                            <td>1500/-</td>
+                            <td>1200/-</td>
+                        </tr>
+                        <tr>
+                            <td>Pearl Facial</td>
+                            <td>1700/-</td>
+                            <td>1360/-</td>
+                        </tr>
+                        <tr>
+                            <td>Diamond Facial</td>
+                            <td>1800/-</td>
+                            <td>1440/-</td>
+                        </tr>
+                        <tr>
+                            <td>Fresh Fruit Facial</td>
+                            <td>1800/-</td>
+                            <td>1440/-</td>
+                        </tr>
+                        <tr>
+                            <td>Wine Facial</td>
+                            <td>2000/-</td>
+                            <td>1600/-</td>
+                        </tr>
+                        <tr>
+                            <td>Mint Facial</td>
+                            <td>2000/-</td>
+                            <td>1600/-</td>
+                        </tr>
+                        <tr>
+                            <th>ADVANCE FACIALS</th>
+                        </tr>
+                        <tr>
+                            <td>Skin Brightning Facial</td>
+                            <td>2300/-</td>
+                            <td>1840/-</td>
+                        </tr>
+                        <tr>
+                            <td>Multi Vitamin Facial</td>
+                            <td>2300/-</td>
+                            <td>1840/-</td>
+                        </tr>
+                        <tr>
+                            <td>Tan Clear Facial</td>
+                            <td>2500/-</td>
+                            <td>2000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Signature Facial</td>
+                            <td>2750/-</td>
+                            <td>2200/-</td>
+                        </tr>
+                        <tr>
+                            <td>LOTUS Vitalizing Facial</td>
+                            <td>3000/-</td>
+                            <td>2400/-</td>
+                        </tr>
+                        <tr>
+                            <td>O3 Basic Facial</td>
+                            <td>3500/-</td>
+                            <td>2800/-</td>
+                        </tr>
+                        <tr>
+                            <td>Regenerating Youth Uplift Facial</td>
+                            <td>3800/-</td>
+                            <td>3040/-</td>
+                        </tr>
+                    </table>
+                </ul>
+                <ul class="service" id="serviceM10Service">
+                    <h4>LUXURY / Bridal Facials</h4>
+                    <table style="width:85%">
+                        <tr>
+                            <th>LUXURY / BRIDAL FACIALS</th>
+                            <th>Regular</th>
+                            <th>Member</th>
+                        </tr>
+                        <tr>
+                            <td>Fair & Glow Facial</td>
+                            <td>4500/-</td>
+                            <td>3600/-</td>
+                        </tr>
+                        <tr>
+                            <td>Platinum FACIALS</td>
+                            <td>5000/-</td>
+                            <td>4000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Lotus Advance Whitening Facial</td>
+                            <td>6000/-</td>
+                            <td>4800/-</td>
+                        </tr>
+                        <tr>
+                            <td>O3 + Advance Whitening Facial</td>
+                            <td>6500/-</td>
+                            <td>5200/-</td>
+                        </tr>
+                    </table>
+                </ul>
+                <ul class="service" id="serviceM11Service">
+                    <h4>Skin Treatments</h4>
+                    <table style="width: 85%">
+                        <tr>
+                            <th>skin Treatments</th>
+                            <th>Regualr</th>
+                            <th>Member</th>
+                        </tr>
+                        <tr>
+                            <td>Acne treatment Per Sitting</td>
+                            <td>5000/-</td>
+                            <td>4000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Under Eye Treatment</td>
+                            <td>2000/-</td>
+                            <td>1600/-</td>
+                        </tr>
+                        <tr>
+                            <th>MASKS</th>
+                        </tr>
+                        <tr>
+                            <td>Peel Off Brightening Mask</td>
+                            <td>1500/-</td>
+                            <td>1200/-</td>
+                        </tr>
+                        <tr>
+                            <td>Rose Peel Off Mask</td>
+                            <td>1500/-</td>
+                            <td>1200/-</td>
+                        </tr>
+                        <tr>
+                            <td>O3 + Advances Whitening Mask</td>
+                            <td>2500/-</td>
+                            <td>2000/-</td>
+                        </tr>
+                    </table>
+
+
+
+
+                </ul>
+                <ul class="service" id="serviceM12Service">
+                    <h4>Hand & feet Care</h4>
+                    <table style="width: 88%">
+                        <tr>
+                            <th>MANICURE</th>
+                            <th>Regualr</th>
+                            <th>Member</th>
+                        </tr>
+                        <tr>
+                            <td>Classic Manicure</td>
+                            <td>900/-</td>
+                            <td>720/-</td>
+                        </tr>
+                        <tr>
+                            <td>Wine Manicure</td>
+                            <td>1100/-</td>
+                            <td>880/-</td>
+                        </tr>
+                        <tr>
+                            <td>Whitening Detan Manicure</td>
+                            <td>1300/-</td>
+                            <td>1040/-</td>
+                        </tr>
+                        <tr>
+                            <td>Hydrating spa Manicra</td>
+                            <td>1500/-</td>
+                            <td>1200/-</td>
+                        </tr>
+                        <tr>
+                            <td>Crystal Spa Manicra</td>
+                            <td>1700/-</td>
+                            <td>1360/-</td>
+                        </tr>
+                        <tr>
+                            <th>FEDICURE</th>
+                        </tr>
+                        <tr>
+                            <td>Classic pedicure</td>
+                            <td>1100/-</td>
+                            <td>880/-</td>
+                        </tr>
+                        <tr>
+                            <td>Wine Pedicure</td>
+                            <td>1300/-</td>
+                            <td>1040/-</td>
+                        </tr>
+                        <tr>
+                            <td>Whitening detan pedicure</td>
+                            <td>1500/-</td>
+                            <td>1200/-</td>
+                        </tr>
+                        <tr>
+                            <td>Hydrating Spa Pedicure</td>
+                            <td>1700/-</td>
+                            <td>1360/-</td>
+                        </tr>
+                        <tr>
+                            <td>Spa Crystal Pedicure</td>
+                            <td>1900/-</td>
+                            <td>1520/-</td>
+                        </tr>
+                        <tr>
+                            <td>Heel peel Pedicure</td>
+                            <td>3000/-</td>
+                            <td>2400/-</td>
+                        </tr>
+                        <tr>
+                            <td>Hands-Nail cut,File</td>
+                            <td>500/-</td>
+                            <td>400/-</td>
+                        </tr>
+                        <tr>
+                            <td>Legs-Nail Cut, File</td>
+                            <td>500/-</td>
+                            <td>400/-</td>
+                        </tr>
+                    </table>
+                </ul>
+                <ul class="service" id="serviceM13Service">
+                    <h4>Spa Services</h4>
+                    <table style="width: 85%">
+                        <tr>
+
+                            <th>OLD HEAD MASSAGE</th>
+                            <th>Regular</th>
+                            <th>Member</th>
+                        </tr>
+                        <tr>
+                            <td>Coconut Oil</td>
+                            <td>800/-</td>
+                            <td>640/-</td>
+                        </tr>
+                        <tr>
+                            <td>Cooling Oil</td>
+                            <td>800/-</td>
+                            <td>640/-</td>
+                        </tr>
+                        <tr>
+                            <td>Almond Oil</td>
+                            <td>900/-</td>
+                            <td>720/-</td>
+                        </tr>
+                        <tr>
+                            <td>Olive Oil</td>
+                            <td>900/-</td>
+                            <td>720/-</td>
+                        </tr>
+                        <tr>
+                            <th>MASSAGES</th>
+                        </tr>
+                        <tr>
+                            <td>Hands Massage (30 Mins)</td>
+                            <td>1300/-</td>
+                            <td>1040/-</td>
+                        </tr>
+                        <tr>
+                            <td>Foot Refiexology (30 Mins)</td>
+                            <td>1500/-</td>
+                            <td>1200/-</td>
+                        </tr>
+                        <tr>
+                            <td>Foot Refiexology (45 Mins)</td>
+                            <td>1800/-</td>
+                            <td>1500/-</td>
+                        </tr>
+                        <tr>
+                            <td>Neck & Back Massage (30 Mins)</td>
+                            <td>1500/-</td>
+                            <td>1200/-</td>
+                        </tr>
+                        <tr>
+                            <td>Leg Massage (30 Mins)</td>
+                            <td>1900/-</td>
+                            <td>1520/-</td>
+                        </tr>
+                        <tr>
+                            <td>Swedist Therapy (45 Mins)</td>
+                            <td>2500/-</td>
+                            <td>2000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Swedist Therapy (60 Mins)</td>
+                            <td>3000/-</td>
+                            <td>2400/-</td>
+                        </tr>
+                        <tr>
+                            <td>Deep Tissue Therapy (45 Mins)</td>
+                            <td>2500/-</td>
+                            <td>2000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Deep Tissue Therapy (60 Mins)</td>
+                            <td>3000/-</td>
+                            <td>2400/-</td>
+                        </tr>
+
+                    </table>
+                </ul>
+                <ul class="service" id="serviceM14Service">
+                    <h4>Body Spa</h4>
+                    <table style="width: 85%">
+                        <tr>
+
+                            <th>Body Spa</th>
+                            <th>Regular</th>
+                            <th>Member</th>
+                        </tr>
+                        <tr>
+                            <td>Full Hand Polish</td>
+                            <td>1600/-</td>
+                            <td>1280/-</td>
+                        </tr>
+                        <tr>
+                            <td>Full Legs Polish</td>
+                            <td>2000/-</td>
+                            <td>1600/-</td>
+                        </tr>
+                        <tr>
+                            <td>Full Back Polish</td>
+                            <td>1800/-</td>
+                            <td>1440/-</td>
+                        </tr>
+                        <tr>
+                            <td>Full Front Polish</td>
+                            <td>4000/-</td>
+                            <td>3200/-</td>
+                        </tr>
+                        <tr>
+                            <td>Full Body Scrub</td>
+                            <td>6500/-</td>
+                            <td>5200/-</td>
+                        </tr>
+                        <tr>
+                            <td>Full Body Detan + Polish</td>
+                            <td>8000/-</td>
+                            <td>6400/-</td>
+                        </tr>
+                        <tr>
+                            <th>GROOM MAKE UP</th>
+                            <td>8000/-</td>
+                            <td>6400/-</td>
+                        </tr>
+
+                    </table>
+                </ul>
+                <!-- <ul class="service" id="serviceM6Service">
+            helll3
+        </ul>
+        <ul class="service" id="serviceM7Service">
+            helll1
+        </ul>
+        <ul class="service" id="serviceM8Service">
+            helll2
+        </ul>
+        <ul class="service" id="serviceM9Service">
+            helll3
+        </ul>
+        <ul class="service" id="serviceM10Service">
+            helll2
+        </ul>
+        <ul class="service" id="serviceM11Service">
+            helll3
+        </ul>
+        <ul class="service" id="serviceM12Service">
+            helll3
+        </ul> -->
+            </div>
+
+            <div id="femaleServices" class="services">
+                <h2>Female Services</h2>
+                <div>
+                    <button class="ser-btn" onclick="showService('service1')">FAMILY PACKAGES</button>
+                    <button class="ser-btn" onclick="showService('service2')">Hair Cuts</button>
+                    <button class="ser-btn" onclick="showService('service3')">Styling</button>
+                    <button class="ser-btn" onclick="showService('service4')">Treatments</button>
+                    <button class="ser-btn" onclick="showService('service5')">Hair Colour</button>
+                    <button class="ser-btn" onclick="showService('service6')">Technical Services</button>
+                    <button class="ser-btn" onclick="showService('service7')">Regular Waxing & Rica Waxing</button>
+                    <button class="ser-btn" onclick="showService('service8')">Spa Services</button>
+                    <button class="ser-btn" onclick="showService('service9')">Skin Treatments</button>
+                    <button class="ser-btn" onclick="showService('service10')">Facials</button>
+                    <button class="ser-btn" onclick="showService('service11')">Women Beauty Services</button>
+                    <button class="ser-btn" onclick="showService('service12')">Detan/Bleach</button>
+                </div>
+                <ul class="service" id="service1Service">
+                    <!-- <table style="width: 85%">
+                <th>Rejuvenate Yourself & Your Family With Our Special family Packages</th>
+
+            </table>
+            <table style="width:60%">
+
+                <tr>
+                    <th>Package</th>
+                    <th>Amount To Be Paid</th>
+                    <th>Services</th>
+                    <th>Validity</th>
+                    <th>Discount</th>
+                </tr>
+                <tr>
+                    <td>Silver</td>
+                    <td>7500/-</td>
+                    <td>11000/-</td>
+                    <td>3 MONTHS</td>
+                    <td>31%</td>
+                </tr>
+                <tr>
+                    <td>Gold</td>
+                    <td>15000/-</td>
+                    <td>25000/-</td>
+                    <td>6 MONTHS</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>Diamond</td>
+                    <td>30000/-</td>
+                    <td>60000/-</td>
+                    <td>9 MONTHS</td>
+                    <td>50%</td>
+                </tr>
+                <tr>
+                    <td>Platinum</td>
+                    <td>60000/-</td>
+                    <td>120000/-</td>
+                    <td>12 MONTHS</td>
+                    <td>50%</td>
+                </tr>
+            </table>
+            <table style="width: 85%">
+                <th>INCLUDES ALL HAIR, BEAUTY AND SPA SERVICES, DOESNOT INCLUDE MAKEUP SERVICES</th>
+
+            </table> -->
+                </ul>
+
+                <ul id="service1Service" class="service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-1.jpg" width="90" height="90" alt="Hair Cutting & Fitting"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Hair Cutting & Fitting</h3>
+                                    <p class="card-text">1 Male</p>
+                                </div>
+
+                                <data class="card-price" value="89">₹449</data>
+                            </div>
+                            <div class="pricing-card">
+                                <p>Female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-1.jpg" width="90" height="90" alt="Hair Cutting & Fitting"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Hair Cutting & Fitting</h3>
+
+                                    <p class="card-text">1 feMale</p>
+                                </div>
+                                <data class="card-price" value="89">₹449</data>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="service2Service" class="service">
+                    <li>
+                        <div
+                            style="display: flex;justify-content: space-around;align-items: center;flex-direction: row;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-2.jpg" width="90" height="90" alt="Shaving & Facial"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'Oreal Hair Color</h3>
+
+                                    <p class="card-text">1 Male</p>
+                                </div>
+
+                                <data class="card-price" value="45">₹899</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-2.jpg" width="90" height="90" alt="Shaving & Facial"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'Oreal Hair Color</h3>
+
+                                    <p class="card-text">1 Male</p>
+                                </div>
+
+                                <data class="card-price" value="45">₹899</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+                <ul class="service" id="service3Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-3.jpg" width="90" height="90" alt="Hair Color & Wash"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title"> L'oreal Global Hair Color (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="35">₹3,499</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-3.jpg" width="90" height="90" alt="Hair Color & Wash"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title"> L'oreal Global Hair Color (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="35">₹3,499</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+                <ul class="service" id="service4Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-4.jpg" width="90" height="90" alt="Body Massage"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Full Body Polishing + Full Body De-Tan</h3>
+
+                                    <p class="card-text">1 Person</p>
+                                </div>
+
+                                <data class="card-price" value="56">₹4,999</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-4.jpg" width="90" height="90" alt="Body Massage"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Full Body Polishing + Full Body De-Tan</h3>
+
+                                    <p class="card-text">1 Person</p>
+                                </div>
+
+                                <data class="card-price" value="56">₹4,999</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+                <ul class="service" id="service5Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'oreal Hair Spa (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="27">₹1,199</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'oreal Hair Spa (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="27">₹1,199</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+                <ul class="service" id="service6Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-6.jpg" width="90" height="90" alt="Facial & Face Wash"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Advance Haircut (Senior Hair Stylist) + Hair Wash +
+                                        Blow
+                                        Dry
+                                    </h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="63">₹1,099</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-6.jpg" width="90" height="90" alt="Facial & Face Wash"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Advance Haircut (Senior Hair Stylist) + Hair Wash +
+                                        Blow
+                                        Dry
+                                    </h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="63">₹1,099</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+                <ul class="service" id="service7Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-1.jpg" width="90" height="90" alt="Backbone Massage"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Advance Haircut (Senior Hair Stylist) + Hair Wash +
+                                        Blow
+                                        Dry
+                                    </h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="43">₹1,099</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-1.jpg" width="90" height="90" alt="Backbone Massage"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Advance Haircut (Senior Hair Stylist) + Hair Wash +
+                                        Blow
+                                        Dry
+                                    </h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="43">₹1,099</data>
+
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                </ul>
+                <ul class="service" id="service8Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-2.jpg" width="90" height="90" alt="Meditation & Massage"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Keratin Treatment (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="74">₹5,999</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>femlae</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-2.jpg" width="90" height="90" alt="Meditation & Massage"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Keratin Treatment (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="74">₹5,999</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+                <ul class="service" id="service9Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-2.jpg" width="90" height="90" alt="Meditation & Massage"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Keratin Treatment (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="74">₹5,999</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>femlae</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-2.jpg" width="90" height="90" alt="Meditation & Massage"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">Keratin Treatment (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="74">₹5,999</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+                <ul class="service" id="service10Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'oreal Hair Spa (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="27">₹1,199</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'oreal Hair Spa (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="27">₹1,199</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+                <ul class="service" id="service11Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'oreal Hair Spa (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="27">₹1,199</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'oreal Hair Spa (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="27">₹1,199</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+                <ul class="service" id="service12Service">
+                    <li>
+                        <div
+                            style="display: flex;flex-direction: row;justify-content: space-around;align-items: center;">
+                            <div class="pricing-card">
+                                <p>male</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'oreal Hair Spa (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="27">₹1,199</data>
+
+                            </div>
+                            <div class="pricing-card">
+                                <p>female</p>
+                                <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                                    <img src="img/service-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="wrapper">
+                                    <h3 class="h3 card-title">L'oreal Hair Spa (Medium Length)</h3>
+
+                                    <p class="card-text">1 Female</p>
+                                </div>
+
+                                <data class="card-price" value="27">₹1,199</data>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
     </div>
     <!-- Service End -->
 
+    <!-- Pricing Start women -->
+    <div class="container-fluid bg-pricing">
+        <h2 class="text-center">Female Pricing</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="img/gla14.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7 pt-5 pb-lg-5">
+                    <div class="pricing-text bg-light p-4 p-lg-5 my-lg-5">
+                        <div class="owl-carousel pricing-carousel">
+                            <div class="bg-white">
+                                <div
+                                    class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
+                                    <h1 class="display-4 mb-0">
+                                        <small class="align-top text-muted font-weight-medium"
+                                            style="font-size: 22px; line-height: 45px;">₹</small>800<small
+                                            class="align-bottom text-muted font-weight-medium"
+                                            style="font-size: 16px; line-height: 40px;">/year</small>
+                                    </h1>
+                                    <h5 class="text-primary text-uppercase m-0">Membership</h5>
+                                </div>
+                                <div class="p-4">
+                                    <p><i class="fa fa-check text-success mr-2"></i>2 - People</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i>Services 20% Discount</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i>Products 5% Discount</p>
+                                    <a href="#footer" class="btn btn-primary my-2">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="bg-white">
+                                <div
+                                    class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
+                                    <!-- <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted font-weight-medium"
+                                        style="font-size: 22px; line-height: 45px;">$</small>99<small
+                                        class="align-bottom text-muted font-weight-medium"
+                                        style="font-size: 16px; line-height: 40px;">/Mo</small>
+                                </h1> -->
+                                    <h5 class="text-primary text-uppercase m-0">Hair Cuts - Women</h5>
+                                </div>
+                                <div class="p-4">
+                                    <p>INCLUDING WASH,CUT & BLOWDRY</p>
+                                    <div style="display: flex;">
+                                        <div>
+                                            <p><i class="fa fa-check text-success mr-2"></i>Basic Cut-</p>
+                                            <p><i class="fa fa-check text-success mr-2"></i>Advance Cut-</p>
+                                            <p><i class="fa fa-check text-success mr-2"></i>Baby Gril Under 10yrs-</p>
+                                            <p><i class="fa fa-check text-success mr-2"></i>Bangs(JUST CUT)-</p>
+                                            <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care-</p>
+                                        </div>
+                                        <div>
+                                            <p>R</p>
+                                            <p>1100</p>
+                                            <p>1500</p>
+                                            <p>700</p>
+                                            <p>300</p>
+                                        </div>
+                                        <div>
+                                            <p>M</p>
+                                            <p>850</p>
+                                            <p>1200</p>
+                                            <p>560</p>
+                                            <p>240</p>
+                                        </div>
+                                    </div>
 
+                                    <a href="#footer" class="btn btn-primary my-2">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="bg-white">
+                                <div
+                                    class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
+                                    <h1 class="display-4 mb-0">
+                                        <small class="align-top text-muted font-weight-medium"
+                                            style="font-size: 22px; line-height: 45px;">$</small>149<small
+                                            class="align-bottom text-muted font-weight-medium"
+                                            style="font-size: 16px; line-height: 40px;">/Mo</small>
+                                    </h1>
+                                    <h5 class="text-primary text-uppercase m-0">VIP Plan</h5>
+                                </div>
+                                <div class="p-4">
+                                    <p><i class="fa fa-check text-success mr-2"></i>Full Body Massage</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i>Deep Tissue Massage</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i>Hot Stone Massage</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i>Tissue Body Polish</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care</p>
+                                    <a href="#footer" class="btn btn-primary my-2">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing End women -->
+    <!-- Pricing Start men -->
+    <div class="container-fluid bg-pricing" style="background: url('./img/landingapgemal1.jpg');margin: 20px 0;">
+        <h2 class="text-center">Male Pricing</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="img/gallery-4.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7 pt-5 pb-lg-5">
+                    <div class="pricing-text bg-light p-4 p-lg-5 my-lg-5">
+                        <div class="owl-carousel pricing-carousel">
+                            <div class="bg-white">
+                                <div
+                                    class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
+                                    <h1 class="display-4 mb-0">
+                                        <small class="align-top text-muted font-weight-medium"
+                                            style="font-size: 22px; line-height: 45px;">₹</small>800<small
+                                            class="align-bottom text-muted font-weight-medium"
+                                            style="font-size: 16px; line-height: 40px;">/year</small>
+                                    </h1>
+                                    <h5 class="text-primary text-uppercase m-0">Membership</h5>
+                                </div>
+                                <div class="p-4">
+                                    <p><i class="fa fa-check text-success mr-2"></i>2 - People</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i>Services 20% Discount</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i>Products 5% Discount</p>
+                                    <a href="#footer" class="btn btn-primary my-2">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="bg-white">
+                                <div
+                                    class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
+                                    <!-- <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted font-weight-medium"
+                                        style="font-size: 22px; line-height: 45px;">$</small>99<small
+                                        class="align-bottom text-muted font-weight-medium"
+                                        style="font-size: 16px; line-height: 40px;">/Mo</small>
+                                </h1> -->
+                                    <h5 class="text-primary text-uppercase m-0">Hair Cuts - Men</h5>
+                                </div>
+                                <div class="p-4">
+                                    <p>INCLUDING WASH,CUT & BLOWDRY</p>
+                                    <div style="display: flex;">
+                                        <div>
+                                            <p><i class="fa fa-check text-success mr-2"></i>Basic Cut-</p>
+                                            <p><i class="fa fa-check text-success mr-2"></i>Advance Cut-</p>
+                                            <p><i class="fa fa-check text-success mr-2"></i>Baby Gril Under 10yrs-</p>
+                                            <p><i class="fa fa-check text-success mr-2"></i>Bangs(JUST CUT)-</p>
+                                            <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care-</p>
+                                        </div>
+                                        <div>
+                                            <p>R</p>
+                                            <p>1100</p>
+                                            <p>1500</p>
+                                            <p>700</p>
+                                            <p>300</p>
+                                        </div>
+                                        <div>
+                                            <p>M</p>
+                                            <p>850</p>
+                                            <p>1200</p>
+                                            <p>560</p>
+                                            <p>240</p>
+                                        </div>
+                                    </div>
+
+                                    <a href="#footer" class="btn btn-primary my-2">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="bg-white">
+                                <div
+                                    class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
+                                    <h1 class="display-4 mb-0">
+                                        <small class="align-top text-muted font-weight-medium"
+                                            style="font-size: 22px; line-height: 45px;">$</small>149<small
+                                            class="align-bottom text-muted font-weight-medium"
+                                            style="font-size: 16px; line-height: 40px;">/Mo</small>
+                                    </h1>
+                                    <h5 class="text-primary text-uppercase m-0">VIP Plan</h5>
+                                </div>
+                                <div class="p-4">
+                                    <p><i class="fa fa-check text-success mr-2"></i>Full Body Massage</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i>Deep Tissue Massage</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i>Hot Stone Massage</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i>Tissue Body Polish</p>
+                                    <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care</p>
+                                    <a href="#footer" class="btn btn-primary my-2">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing End men-->
     <!-- Testimonial Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-6 pb-5 pb-lg-0">
+                    <!-- <div class="layout21_image-wrapper">
+                        <video style="width: 100%; height: 100%; object-fit: cover" autoplay="" loop="" muted=""
+                            src="./img/testimonial.jpg"></video>
+                    </div> -->
                     <img class="img-fluid w-100" src="img/testimonial.jpg" alt="">
                 </div>
                 <div class="col-lg-6">
@@ -199,15 +1885,17 @@
                             <i class="fa fa-3x fa-quote-right text-primary position-absolute"
                                 style="top: -6px; right: 0;"></i>
                             <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg"
-                                    style="width: 60px; height: 60px;" alt="">
+                                <img class="img-fluid rounded-circle" src="img/gallery-4.jpg"
+                                    style="width: 60px; height: 60px;object-fit: scale-down;" alt="">
                                 <div class="ml-3">
-                                    <h6 class="text-uppercase">Client Name</h6>
+                                    <h6 class="text-uppercase">David N</h6>
                                     <span>Profession</span>
                                 </div>
                             </div>
-                            <p class="m-0">Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor
-                                sea ipsum diam sed clita dolore eos dolores magna erat dolore sed stet justo et dolor.
+                            <p class="m-0">"I've been a regular at Glamour Lounge for years, and I couldn't be happier
+                                with the service. The stylists are not only skilled but also incredibly attentive to my
+                                preferences. Plus, it's refreshing to find a salon that caters to everyone. Kudos to the
+                                team!"
                             </p>
                         </div>
                         <div class="position-relative">
@@ -217,12 +1905,14 @@
                                 <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg"
                                     style="width: 60px; height: 60px;" alt="">
                                 <div class="ml-3">
-                                    <h6 class="text-uppercase">Client Name</h6>
+                                    <h6 class="text-uppercase">Emily R</h6>
                                     <span>Profession</span>
                                 </div>
                             </div>
-                            <p class="m-0">Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor
-                                sea ipsum diam sed clita dolore eos dolores magna erat dolore sed stet justo et dolor.
+                            <p class="m-0"> "Finding a unisex salon that understands my style has always been a
+                                challenge, but Glamour Lounge exceeded my expectations. From haircuts to skincare, they
+                                deliver exceptional results every time. I highly recommend them to anyone seeking a
+                                versatile and welcoming salon experience."
                             </p>
                         </div>
                         <div class="position-relative">
@@ -232,12 +1922,31 @@
                                 <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg"
                                     style="width: 60px; height: 60px;" alt="">
                                 <div class="ml-3">
-                                    <h6 class="text-uppercase">Client Name</h6>
+                                    <h6 class="text-uppercase">Alex M</h6>
                                     <span>Profession</span>
                                 </div>
                             </div>
-                            <p class="m-0">Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor
-                                sea ipsum diam sed clita dolore eos dolores magna erat dolore sed stet justo et dolor.
+                            <p class="m-0">"I recently visited Glamour Lounge for a special event, and I was blown away
+                                by the level of professionalism and talent. The team not only transformed my look but
+                                also made me feel comfortable throughout the process. I'm definitely making this salon
+                                my go-to spot!"
+                            </p>
+                        </div>
+                        <div class="position-relative">
+                            <i class="fa fa-3x fa-quote-right text-primary position-absolute"
+                                style="top: -6px; right: 0;"></i>
+                            <div class="d-flex align-items-center mb-3">
+                                <img class="img-fluid rounded-circle" src="img/gallery-1.jpg"
+                                    style="width: 60px; height: 60px;" alt="">
+                                <div class="ml-3">
+                                    <h6 class="text-uppercase">D Ravi</h6>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                            <p class="m-0">"I can't thank Glamour Lounge enough for making me feel fabulous every time I
+                                visit. As a guy, I was a bit apprehensive at first, but the staff's professionalism and
+                                the unisex environment immediately put me at ease. The quality of service is
+                                exceptional, and I wouldn't trust my grooming and style needs to anyone else."
                             </p>
                         </div>
                     </div>
@@ -245,6 +1954,7 @@
             </div>
         </div>
     </div>
+    <!-- Testimonial End -->
     <!-- Service Start -->
     <div class="container-fluid px-0 py-2 my-2" id="appointment">
         <div class="row justify-content-center bg-appointment mx-0">
@@ -296,12 +2006,19 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input id="message" type="text" class="form-control bg-transparent p-4 message"
-                                        placeholder="Message" required="required" />
+                                    <select id="service" class="form-control bg-transparent" style="color: #f9df7a;">
+
+                                        <option value="Cutting" selected style="background-color: #02445f;">Cutting
+                                        </option>
+                                        <option value="Spa" style="background-color: #02445f;">Spa</option>
+                                        <option value="Beauty" style="background-color: #02445f;">Beauty</option>
+                                        <option value="Massage" style="background-color: #02445f;">Massage</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
+
                             <div class="col-sm-12">
                                 <button class="btn btn-primary btn-block" type="submit" style="height: 47px;">Book
                                     Appointment</button>
@@ -312,27 +2029,34 @@
             </div>
         </div>
     </div>
+
     <!-- Service End -->
-    <!-- Footer Start -->
-    <div class="footer container-fluid position-relative py-5" style="margin-top: 90px;background-color: #02445f;">
+    <div class="footer container-fluid position-relative py-2" style="margin-top: 90px;" id="footer">
         <div class="container pt-5">
             <div class="row">
                 <div class="col-lg-6 pr-lg-5 mb-5">
                     <a href="index.html" class="navbar-brand">
-                        <img src="./img/logo.jpeg" alt="" style="width:200px" />
+                        <img src="./img/logoColor.png" alt="" style="width:300px;padding: 10px;" />
                     </a>
                     <p></p>
                     <p><i class="fa fa-map-marker-alt mr-2"></i>Phase No, Neeha’s, 1st Floor, Plot No.33, 1, Madhapur
-                        Rd, adjacent to Jubilee Ridge Hotel, Kavuri Hills, Hyderabad, Telangana 500033</p>
+                        Rd, adjacent to Jubilee Ridge Hotel, Kavuri
+                        Hills, Hyderabad, Telangana 500033</p>
                     <p><i class="fa fa-phone-alt mr-2"></i>73373 59025</p>
-                    <p><i class="fa fa-envelope mr-2"></i>theglamourlounge.salon@gmail.com</p>
+                    <p style="word-break: break-all;"><i
+                            class="fa fa-envelope mr-2"></i>theglamourlounge.salon@gmail.com</p>
                     <div class="d-flex justify-content-start mt-4">
-                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="tel:+9173373 59025"><i
+                                class="fas fa-phone-alt" style="color:#02445f !important;"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2"
+                            href="https://www.google.com/maps/place/The+Glamour+Lounge/@17.4408741,78.3954031,17z/data=!3m2!4b1!5s0x3bcb91437a53787b:0xd1cf6e0f2ab83f8d!4m6!3m5!1s0x3bcb91437bb97f95:0x3fd1d4e5f3a572b!8m2!3d17.440869!4d78.397978!16s%2Fg%2F1ptxmlmhh?authuser=0&entry=ttu">
+                            <i class="fas fa-map-marker-alt" style="color:#02445f !important;"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2 "
+                            href="https://www.facebook.com/100968418448682/posts/the-glamour-lounge-unisex-salon-spa-offering-body-massagesour-salon-provides-bod/442812414264279/?locale=ms_MY&paipv=0&eav=Afa5wtujIaaCPMwzBsExr3NSRuNhMXAFlLzg01jjHmktRiyrWNmCce2KkdpB6bWjyTg&_rdr"><i
+                                class="fab fa-facebook-f" style="color:#02445f !important;"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square"
+                            href="https://www.instagram.com/theglamourloungesalon/?hl=en"><i class="fab fa-instagram"
+                                style="color:#02445f !important;"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6 pl-lg-5">
@@ -340,41 +2064,49 @@
                         <div class="col-sm-6 mb-5">
                             <h5 class="text-white text-uppercase mb-4">Quick Links</h5>
                             <div class="d-flex flex-column justify-content-start">
-                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About
-                                    Us</a>
-                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our
-                                    Services</a>
-                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Pricing
-                                    Plan</a>
-                                <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                                <a class="text-white-50 mb-2" href="index.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Home</a>
+                                <a class="text-white-50 mb-2" href="about.html"><i
+                                        class="fa fa-angle-right mr-2"></i>About</a>
+                                <a class="text-white-50 mb-2" href="service.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Our
+                                    Services
+                                </a>
+                                <a class="text-white-50 mb-2" href="gallery.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Gallery</a>
+                                <a class="text-white-50" href="contact.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Contact Us</a>
                             </div>
                         </div>
                         <div class="col-sm-6 mb-5">
                             <h5 class="text-white text-uppercase mb-4">Our Services</h5>
                             <div class="d-flex flex-column justify-content-start">
-                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Body
+                                <a class="text-white-50 mb-2" href="service.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Body
                                     Massage</a>
-                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Stone
+                                <a class="text-white-50 mb-2" href="service.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Stone
                                     Therapy</a>
-                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Facial
+                                <a class="text-white-50 mb-2" href="service.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Facial
                                     Therapy</a>
-                                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Skin
+                                <a class="text-white-50 mb-2" href="service.html"><i
+                                        class="fa fa-angle-right mr-2"></i>Skin
                                     Care</a>
-                                <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Nail Care</a>
+                                <a class="text-white-50" href="service.html"><i class="fa fa-angle-right mr-2"></i>Nail
+                                    Care</a>
                             </div>
                         </div>
-                        <div class="col-sm-12 mb-5">
-                            <h5 class="text-white text-uppercase mb-4">Newsletter</h5>
-                            <div class="w-100">
-                                <div class="input-group">
-                                    <input type="text" class="form-control border-light" style="padding: 30px;"
-                                        placeholder="Your Email Address">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-primary px-4">Sign Up</button>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-sm-12 mb-5 pt-3">
+                            <h3>The Glamour Lounge Unisex Salon & Spa</h3>
+                            <p><span class="star">&#9733;</span>"Unwind, rejuvenate, and rediscover your unique style at
+                                our unisex
+                                salon – where beauty
+                                meets relaxation."</p>
+                            <p><span class="star">&#9733;</span>"Elevate your grooming experience at our unisex salon,
+                                where style
+                                knows no gender, and
+                                every visit is a celebration of individuality."</p>
                         </div>
                     </div>
                 </div>
@@ -434,6 +2166,103 @@
         })();
     </script> -->
     <!--End of Tawk.to Script-->
+    <script>
+        //book appointment
+
+        document
+            .getElementById("bookingForm")
+            .addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                var fullName = document.getElementById("fullName").value;
+                var email = document.getElementById("mail").value;
+                var date = document.getElementById("date").value;
+                var time = document.getElementById("time").value;
+                var message = document.getElementById("message").value;
+                var service = document.getElementById("service").value;
+
+
+                // debugger
+
+                // if (!fullName) {
+                //     showError(document.getElementById("name"), "Please enter your name.");
+                //     // return;
+                // }
+
+                // if (!email) {
+                //     showError(document.getElementById("email"), "Please enter your email.");
+                //     // return;
+                // }
+
+                // if (!subject) {
+                //     showError(document.getElementById("subject"), "Please enter a subject.");
+                //     // return;
+                // }
+
+                // if (!message) {
+                //     showError(document.getElementById("message"), "Please enter your message.");
+                //     // return;
+                // }
+                var contact = "+9173373 59025";
+
+                var encodedMessage = encodeURIComponent(
+                    "Name: " +
+                    fullName +
+                    "\n" +
+                    "Email: " +
+                    email +
+                    "\n" +
+                    "Date: " +
+                    date +
+                    "\n" +
+                    "Time: " +
+                    time +
+                    "\n" +
+                    "Service" +
+                    "\n" +
+                    service +
+                    "\n" +
+                    "Message: " +
+                    message
+                );
+
+                // Check if user is on a mobile device
+                if (
+                    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                        navigator.userAgent
+                    )
+                ) {
+                    // Mobile device, open WhatsApp
+                    var whatsappLink = `whatsapp://send?phone=${contact}&text=${encodedMessage}`;
+                    window.open(whatsappLink, "_blank");
+                } else {
+                    // Desktop device, open default email client
+                    emailjs
+                        .send("service_fx42pst", "template_2ngcxmf", {
+                            from_name: fullName,
+                            to_name: "The Glamour Lounge Unisex Salon",
+                            message: `Booking on ${date} at ${time}
+    Message : ${message}
+    Service : ${service}
+    Reply to ${email}`,
+                            reply_to: email,
+                        })
+                        .then(
+                            function (response) {
+                                alert("Mail Sent");
+                                document.getElementById("bookingForm").reset();
+                                console.log("response==>", response);
+                                // You can redirect or perform other actions after successful email sending
+                            },
+                            function (error) {
+                                alert("Error Sending Mail");
+                                console.log("error==>", error);
+                            }
+                        );
+                }
+            });
+    </script>
+
 </body>
 
 </html>
