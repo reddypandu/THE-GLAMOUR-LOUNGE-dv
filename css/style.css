@@ -709,8 +709,8 @@ pre code {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  /* margin-right: -15px; */
+  /* margin-left: -15px; */
 }
 
 .no-gutters {
@@ -4249,10 +4249,10 @@ input[type="button"].btn-block {
 @media (max-width: 992px) {
   .n {
     position: absolute;
+    z-index: 999;
   }
-  /* .walk {
-    z-index: -1;
-  } */
+  .walk {
+  }
   .walk .mobile {
     display: block;
   }
@@ -4352,7 +4352,17 @@ input[type="button"].btn-block {
 .tab-content > .tab-pane {
   display: none;
 }
-
+.top-s {
+  display: flex;
+}
+@media (max-width: 450px) {
+  .top-s {
+    flex-direction: column;
+  }
+  .t-line {
+    display: none;
+  }
+}
 .tab-content > .active {
   display: block;
 }
@@ -10084,7 +10094,7 @@ h6,
   left: 0;
   right: 0;
   bottom: 0;
-  /* background: rgba(33, 30, 28, 0.7); */
+  background: rgba(33, 30, 28, 0.5);
   z-index: 1;
 }
 
