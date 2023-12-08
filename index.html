@@ -672,6 +672,16 @@
             th {
                 color: #02445f;
             }
+
+            @media(max-width:400px) {
+
+                table,
+                th,
+                td {
+
+                    font-size: 8px;
+                }
+            }
         </style>
         <!-- Pricing Start men -->
         <h2 class="text-center p-3">Male Pricing</h2>
@@ -1090,14 +1100,19 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <select id="service" class="form-control bg-transparent" style="color: #f9df7a;">
+
+                                    <select id="service gender" class="form-control bg-transparent"
+                                        style="color: #f9df7a;" name="gender" onchange="updateSubOptions()">
 
                                         <option value="Cutting" selected style="background-color: #02445f;">Cutting
                                         </option>
                                         <option value="Spa" style="background-color: #02445f;">Spa</option>
                                         <option value="Beauty" style="background-color: #02445f;">Beauty</option>
                                         <option value="Massage" style="background-color: #02445f;">Massage</option>
+
                                     </select>
+
+
                                 </div>
                             </div>
                         </div>
@@ -1113,6 +1128,8 @@
             </div>
         </div>
     </div>
+
+
 
     <!--Map-->
 
