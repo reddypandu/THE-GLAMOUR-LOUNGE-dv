@@ -71,32 +71,7 @@
     <!-- Topbar End -->
 
     <style>
-        /* @keyframes textShine {
-            0% {
-                background-position: 0% 50%;
-            }
 
-            100% {
-                background-position: 100% 50%;
-            }
-        }
-
-        .l {
-            font-size: clamp(2.8rem, 1.5vw, 3rem);
-            font-weight: bold;
-            margin: 5px;
-            background: linear-gradient(to right,
-                    #7953cd 20%,
-                    #00affa 30%,
-                    #0190cd 70%,
-                    #764ada 80%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
-            background-size: 500% auto;
-            animation: textShine 5s ease-in-out infinite alternate;
-        } */
     </style>
     <!-- Navbar Start -->
     <div class="container-fluid n" style="padding: 0;">
@@ -109,17 +84,107 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
-                <div class="navbar-nav m-auto py-0">
-                    <a href="#" class="nav-item nav-link active nav">Home</a>
-                    <a href="about.html" class="nav-item nav-link nav">About</a>
-                    <a href="service.html" class="nav-item nav-link nav">Services</a>
+                <div class="navbar-nav py-0" style="margin-left: auto;">
+                    <li>
+                        <a href="index.html" class="nav-item nav-link active nav">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-item nav-link nav">About</a>
+                    </li>
+                    <li class="nav-item  drop-down">
+                        <div class="drop">
+                            <a class="nav-link nav" href="/services.html">Services</a>
+                            <p class="nav-link" id="plus" style="float:left;">+</p>
+                        </div>
 
-                    <a href="gallery.html" class="nav-item nav-link nav">Gallery</a>
 
-                    <a href="contact.html" class="nav-item nav-link nav">Contact us</a>
+                        <ul class="drop-items">
+
+                            <div class="yamm-content">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <ul>
+
+                                            <li><a href="./hair-cutting-services-in-madhapur.html"><i
+                                                        class="fa fa-angle-right"></i>Hair Cutting</a></li>
+
+                                            <li><a href="./anti-oxidant-treatment.html"><i
+                                                        class="fa fa-angle-right"></i>Anti-Oxidant
+                                                    Treatment(IV GLUTATIONE)</a></li>
+                                            <li><a href="./botox-and-fillers.html"><i
+                                                        class="fa fa-angle-right"></i>Botox And
+                                                    Fillers</a>
+                                            </li>
+
+                                            <li><a href="./hydra-and-oxygeno-facial.html"><i
+                                                        class="fa fa-angle-right"></i>Hydra Facial
+                                                    and Oxygeno facial</a>
+                                            </li>
+                                            <li><a href="./semi-permanent-makeup.html"><i
+                                                        class="fa fa-angle-right"></i>Semi-Permanent
+                                                    Make Up</a>
+                                            </li>
+                                            <li><a href="./medi-facials.html"><i class="fa fa-angle-right"></i>Medi
+                                                    Facials(ACNE AND PIGMENTATIC)</a>
+                                            </li>
+                                            <li><a href="./acne-scar-treatment.html"><i
+                                                        class="fa fa-angle-right"></i>Acne Scar
+                                                    Treatment</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <ul>
+                                            <li><a href="./thread-lifting.html"><i class="fa fa-angle-right"></i>Thread
+                                                    Lifting</a>
+                                            </li>
+                                            <li><a href="./skin-boosters.html"><i class="fa fa-angle-right"></i>Skin
+                                                    Boosters</a>
+                                            </li>
+                                            <li><a href="./non-invasive-face-lifting.html"><i
+                                                        class="fa fa-angle-right"></i>HIFU/Non -
+                                                    Invasive Face Lifting</a></li>
+                                            <li><a href="./micro-needling-rf.html"><i
+                                                        class="fa fa-angle-right"></i>Micro
+                                                    Needling(RF)</a></li>
+                                            <li><a href="./double-chin-correction.html"><i
+                                                        class="fa fa-angle-right"></i>Double
+                                                    Chin
+                                                    Correction</a>
+                                            </li>
+                                            <li><a href="./skin-tightening-and-brightening.html"><i
+                                                        class="fa fa-angle-right"></i>Radio
+                                                    Frequency
+                                                    Skin Tightening and Brightening</a>
+                                            </li>
+                                            <li><a href="./laser-hair-removal.html"><i
+                                                        class="fa fa-angle-right"></i>Laser
+                                                    Treatment</a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="gallery.html" class="nav-item nav-link nav">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="./book-an-appointment.html" class="nav-item nav-link nav">Appointment</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="nav-item nav-link nav">Contact us</a>
+                    </li>
                 </div>
-                <a href="#appointment" class="btn btn-primary d-none d-lg-block nav" style="padding-left: 10px;">Book
-                    Now</a>
+
             </div>
         </nav>
     </div>
@@ -1436,7 +1501,15 @@
             });
     </script>
 
+    <script>
+        const open = document.querySelector(".nav-item.drop-down");
+        const btn = document.getElementById("plus");
 
+        btn.addEventListener("click", () => {
+            open.classList.toggle("active");
+        });
+
+    </script>
 
 </body>
 
