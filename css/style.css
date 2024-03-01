@@ -10209,7 +10209,9 @@ h6,
   width: 50px;
   background: #f9df7a;
 }
-
+#footer {
+  border-top: 1px solid #f9df7a;
+}
 .footer p,
 .footer a,
 .footer i {
@@ -10321,10 +10323,10 @@ li.drop-down:hover .drop-items {
     background-color: #f9df7a;
   }
   li.drop-down .drop-items li a {
-  color: #02445f;
+    color: #02445f;
   }
   li.drop-down .drop-items li:hover a {
-  color: #02445f;
+    color: #02445f;
   }
 
   .navbar-nav {
