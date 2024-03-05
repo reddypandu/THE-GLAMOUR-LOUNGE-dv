@@ -1,3 +1,10 @@
+/******* Bootstrap Theming ********/
+/*!
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -401,7 +408,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1200px) {
@@ -482,7 +489,7 @@ h6,
 
 @media (max-width: 1200px) {
   .display-3 {
-    font-size: calc(1.575rem + 3.9vw);
+    font-size: calc(1rem + 2.5vw);
   }
 }
 
@@ -587,8 +594,6 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
-  float:right;
-  
 }
 
 .img-thumbnail {
@@ -660,8 +665,8 @@ pre code {
 .container-lg,
 .container-xl {
   width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
   /* padding-bottom: 15px; */
@@ -2014,19 +2019,14 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: black;
+  color: white;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-/* input::placeholder {
-  color: rgb(100, 93, 93) !important;
-}
-textarea::placeholder {
-  color: rgb(100, 93, 93) !important;
-} */
+
 @media (prefers-reduced-motion: reduce) {
   .form-control {
     transition: none;
@@ -2051,10 +2051,10 @@ textarea::placeholder {
   box-shadow: 0 0 0 0.2rem rgba(249, 163, 146, 0.25);
 }
 
-/* .form-control::placeholder {
+.form-control::placeholder {
   color: white;
   opacity: 1;
-} */
+}
 
 .form-control:disabled,
 .form-control[readonly] {
@@ -4284,7 +4284,11 @@ input[type="button"].btn-block {
 
   margin-left: 1em;
 }
-
+@media (max-width: 992px) {
+  .nav-link {
+    margin-left: 0;
+  }
+}
 .nav-link:hover,
 .nav-link:focus {
   text-decoration: none;
@@ -10164,6 +10168,9 @@ h6,
     height: 100%;
     object-fit: scale-down;
   }
+  .bg-jumbotron {
+    padding-top: 6rem;
+  }
 }
 .team .team-text {
   position: relative;
@@ -10216,9 +10223,7 @@ h6,
   width: 50px;
   background: #f9df7a;
 }
-#footer {
-  border-top: 1px solid #f9df7a;
-}
+
 .footer p,
 .footer a,
 .footer i {
@@ -10248,6 +10253,14 @@ h6,
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+.yamm-content {
+  padding: 10px 20px;
+}
+
+.yamm-content ul {
+  padding: 0;
+  padding-left: 5px;
 }
 li.drop-down {
   position: relative;
