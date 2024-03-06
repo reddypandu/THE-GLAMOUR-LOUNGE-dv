@@ -105,6 +105,13 @@
   });
 })(jQuery);
 
+const open = document.querySelector(".nav-item.drop-down");
+const btn = document.getElementById("plus");
+
+btn.addEventListener("click", () => {
+  open.classList.toggle("active");
+});
+
 //when scroll>100 then navabar fixed to top
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
@@ -172,3 +179,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+//plus - drop-down
