@@ -672,7 +672,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  /* padding-bottom: 15px; */
+  padding-bottom: 15px;
 }
 
 @media (min-width: 576px) {
@@ -5250,7 +5250,7 @@ a.badge-dark.focus {
 
 .jumbotron {
   padding: 2rem 1rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   background-color: #e9ecef;
 }
 
@@ -6607,6 +6607,9 @@ a.close.disabled {
 .bg-primary {
   background-color: #f9df7a !important;
 }
+.bg-primary1{
+  background-color:#ffc107 !important ;
+}
 
 a.bg-primary:hover,
 a.bg-primary:focus,
@@ -6673,7 +6676,9 @@ button.bg-danger:focus {
 .bg-light {
   background-color: #fef1ef !important;
 }
-
+.bg-light1{
+  background-color: #80b0be !important;
+}
 a.bg-light:hover,
 a.bg-light:focus,
 button.bg-light:hover,
@@ -10165,6 +10170,7 @@ h6,
   background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)),
     url(../img/carousel-3.jpg), no-repeat center center;
   background-size: cover;
+  height:100%;
 }
 
 @media (min-width: 992px) {
@@ -10191,6 +10197,7 @@ h6,
   }
   .bg-jumbotron {
     padding-top: 6rem;
+    height:500px;
   }
 }
 .team .team-text {
@@ -10293,7 +10300,7 @@ li.drop-down .drop-items {
   margin-top: 2px;
   top: 100%;
   left: -200px;
-  background-color: #f9df7a;
+  background-color: #90107f;
   display: none;
   width: 800px;
   box-shadow: 1px 1px 2px black;
@@ -10309,7 +10316,7 @@ li.drop-down .drop-items li {
 }
 
 li.drop-down .drop-items li a {
-  color: #02445f;
+  color: white;
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;
@@ -10318,11 +10325,11 @@ li.drop-down .drop-items li a {
 }
 
 li.drop-down .drop-items li:hover {
-  background-color: white;
+  background-color:transparent ;
 }
 
 li.drop-down .drop-items li:hover a {
-  color: #02445f;
+  color: white;
   text-decoration: underline;
 }
 
@@ -10426,4 +10433,11 @@ li.drop-down:hover .drop-items {
   background: linear-gradient(90deg, rgba(228, 0, 125, 1) 0%, rgba(47, 36, 130, 1) 100%);
   border-bottom: 1px solid #ffffff3d !important;
   padding: 0;
+}
+.gradient-strip {
+  width: 120px;
+  margin: 10px auto;
+  background: transparent linear-gradient(90deg, #de9736 0%, #ecc851 100%) 0% 0% no-repeat padding-box;
+  height: 6px;
+  border-radius: 20px;
 }
