@@ -674,6 +674,17 @@ pre code {
   margin-left: auto;
   padding-bottom: 15px;
 }
+.container-fluid1{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 15px;
+  background-image: url(../img/bg-img.jpg);
+  background-size: cover;
+}
+
 
 @media (min-width: 576px) {
   .container,
@@ -10440,4 +10451,20 @@ li.drop-down:hover .drop-items {
   background: transparent linear-gradient(90deg, #de9736 0%, #ecc851 100%) 0% 0% no-repeat padding-box;
   height: 6px;
   border-radius: 20px;
+}
+.text-black{
+  color: black !important;
+}
+ .wpb_column img {
+  max-width: 100%;
+  height: auto;
+  display: inherit;
+}
+
+.aligncenter, img.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
