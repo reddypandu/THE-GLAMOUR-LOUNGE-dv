@@ -6619,7 +6619,7 @@ a.close.disabled {
   background-color: #f9df7a !important;
 }
 .bg-primary1{
-  background-color:#ffc107 !important ;
+  background-color:transparent !important ;
 }
 
 a.bg-primary:hover,
@@ -6736,7 +6736,7 @@ button.bg-dark:focus {
 }
 
 .border-left {
-  border-left: 1px solid #dee2e6 !important;
+  border-left: 2px solid #dee2e6 !important;
 }
 
 .border-0 {
