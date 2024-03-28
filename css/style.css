@@ -604,6 +604,12 @@ mark,
   border:3px solid rgba(228, 0, 125, 1) ;
   border-radius:10px ;
 }
+.img-fluid2{
+  max-width: 100%;
+  height: auto;
+  /* border:3px solid :#d39e00!important ; */
+  border-radius:5px ;
+}
 
 .img-thumbnail {
   padding: 0.25rem;
