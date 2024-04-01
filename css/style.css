@@ -10235,8 +10235,31 @@ background-size:cover;
 background-size:cover;
 
 }
+.bg-jumbotron-k{
+  background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)),
+  url(../img/s-1.jpg), no-repeat center center;
+background-size:cover;
 
+}
+.bg-jumbotron-hf{
+  background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)),
+  url(../img/s-3.jpeg), no-repeat center center;
+background-size:cover;
 
+}
+.bg-jumbotron-b{
+  background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)),
+  url(../img/beauty.jpg), no-repeat center center;
+background-size:cover;
+
+}
+
+.bg-jumbotron-m{
+  background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)),
+  url(../img/manipedi.jpg), no-repeat center center;
+background-size:cover;
+
+}
 
 
 
@@ -10292,6 +10315,12 @@ border: 3px solid rgba(228, 0, 125, 1);
   .bg-jumbotron {
     padding-top: 6rem;
     height:500px;
+  }
+  .bg-jumbotron-k{
+    background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)),
+    url(../img/gray-girl-1.webp), no-repeat center center;
+  background-size:cover;
+  
   }
 }
 .team .team-text {
