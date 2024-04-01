@@ -10208,13 +10208,13 @@ width: 100%;
   background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)),
     url(../img/carousal.jpg), no-repeat center center;
   background-size: cover;
-  height:450px;
+
 }
 .bg-jumbotron2 {
   background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)),
     url(../img/carousal-1.jpg), no-repeat center center;
   background-size: cover;
-  height:450px;
+background-position: center;
 }
 .bg-jumbotron3 {
   background: linear-gradient(rgba(33, 30, 28, 0.7), rgba(33, 40, 28, 0.7)),
