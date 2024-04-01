@@ -103,6 +103,11 @@
     loop: true,
     items: 1,
   });
+
+
+
+
+  
 })(jQuery);
 
 const open = document.querySelector(".nav-item.drop-down");
